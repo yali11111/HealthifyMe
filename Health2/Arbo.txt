@@ -1,0 +1,207 @@
+
+health2/
+│
+├── build.gradle.kts
+├── settings.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+│
+└── app/
+    │
+    ├── build.gradle.kts
+    ├── proguard-rules.pro
+    │
+    └── src/
+        │
+        ├── main/
+        │   │
+        │   ├── AndroidManifest.xml
+        │   │
+        │   ├── assets/
+        │   │   ├── databases/
+        │   │   │   └── UserStats.db
+        │   │   │
+        │   │   ├── absExercise.txt
+        │   │   ├── armExercise.txt
+        │   │   ├── legExercise.txt
+        │   │   ├── weightGain.txt
+        │   │   └── weightLoss.txt
+        │   │
+        │   ├── java/com/example/health2/
+        │   │
+        │   │   ├── Health2App.kt
+        │   │   │
+        │   │   ├── core/
+        │   │   │   ├── utils/
+        │   │   │   │   ├── Constants.kt
+        │   │   │   │   ├── DataParser.kt
+        │   │   │   │   ├── Resource.kt
+        │   │   │   │   ├── DateAxisValueFormatter.kt
+        │   │   │   │   └── DateTimeAxisValueFormatter.kt
+        │   │   │   │
+        │   │   │   ├── dispatcher/
+        │   │   │   ├── extensions/
+        │   │   │   └── preferences/
+        │   │   │
+        │   │   ├── data/
+        │   │   │   ├── local/
+        │   │   │   │   ├── db/
+        │   │   │   │   │   ├── dao/
+        │   │   │   │   │   │   └── UserStatsDao.kt
+        │   │   │   │   │   │
+        │   │   │   │   │   ├── entity/
+        │   │   │   │   │   │   └── UserStatsEntity.kt
+        │   │   │   │   │   │
+        │   │   │   │   │   └── AppDatabase.kt
+        │   │   │   │   │
+        │   │   │   │   ├── assets/
+        │   │   │   │   │   ├── ExerciseAssetManager.kt
+        │   │   │   │   │   └── WeightAssetManager.kt
+        │   │   │   │   │
+        │   │   │   │   └── parser/
+        │   │   │   │       └── DataParser.kt
+        │   │   │   │
+        │   │   │   ├── remote/
+        │   │   │   │   ├── api/
+        │   │   │   │   │   ├── ApiService.kt
+        │   │   │   │   │   ├── DownloadURL.kt
+        │   │   │   │   │   └── GetNearbyPlacesData.kt
+        │   │   │   │   │
+        │   │   │   │   ├── dto/
+        │   │   │   │   └── response/
+        │   │   │   │
+        │   │   │   ├── repository/
+        │   │   │   │   ├── UserStatsRepositoryImpl.kt
+        │   │   │   │   ├── SuggestionRepositoryImpl.kt
+        │   │   │   │   └── ExerciseRepositoryImpl.kt
+        │   │   │   │
+        │   │   │   └── mapper/
+        │   │   │
+        │   │   ├── di/
+        │   │   │   ├── AppModule.kt
+        │   │   │   ├── DatabaseModule.kt
+        │   │   │   ├── RepositoryModule.kt
+        │   │   │   └── NetworkModule.kt
+        │   │   │
+        │   │   ├── domain/
+        │   │   │   ├── model/
+        │   │   │   │   ├── Card.kt
+        │   │   │   │   ├── CaloriesField.kt
+        │   │   │   │   ├── SleepField.kt
+        │   │   │   │   ├── WeightField.kt
+        │   │   │   │   ├── SuggestionStructure.kt
+        │   │   │   │   │
+        │   │   │   │   └── exercise/
+        │   │   │   │       ├── AbsExercise.kt
+        │   │   │   │       ├── ArmExercise.kt
+        │   │   │   │       └── LegExercise.kt
+        │   │   │   │
+        │   │   │   ├── repository/
+        │   │   │   │   ├── UserStatsRepository.kt
+        │   │   │   │   ├── SuggestionRepository.kt
+        │   │   │   │   └── ExerciseRepository.kt
+        │   │   │   │
+        │   │   │   └── usecase/
+        │   │   │       ├── GetStepsUseCase.kt
+        │   │   │       ├── GetSuggestionsUseCase.kt
+        │   │   │       ├── CalculateCaloriesUseCase.kt
+        │   │   │       ├── CalculateSleepUseCase.kt
+        │   │   │       ├── WeightGainUseCase.kt
+        │   │   │       └── WeightLossUseCase.kt
+        │   │   │
+        │   │   ├── presentation/
+        │   │   │   ├── ui/
+        │   │   │   │   ├── activities/
+        │   │   │   │   │   ├── MainActivity.kt
+        │   │   │   │   │   └── MapsActivity.kt
+        │   │   │   │   │
+        │   │   │   │   ├── fragments/
+        │   │   │   │   │   ├── HomeFragment.kt
+        │   │   │   │   │   ├── AddFragment.kt
+        │   │   │   │   │   └── ViewFragment.kt
+        │   │   │   │   │
+        │   │   │   │   ├── screens/
+        │   │   │   │   │   ├── calories/
+        │   │   │   │   │   ├── sleep/
+        │   │   │   │   │   └── weight/
+        │   │   │   │   │
+        │   │   │   │   └── adapters/
+        │   │   │   │       ├── CardAdapterForAdd.kt
+        │   │   │   │       ├── CardAdapterForHome.kt
+        │   │   │   │       ├── CardAdapterForSuggestion.kt
+        │   │   │   │       └── CardAdapterForView.kt
+        │   │   │   │
+        │   │   │   ├── viewmodel/
+        │   │   │   │   ├── HomeViewModel.kt
+        │   │   │   │   ├── StepsViewModel.kt
+        │   │   │   │   ├── WeightViewModel.kt
+        │   │   │   │   ├── CaloriesViewModel.kt
+        │   │   │   │   └── SleepViewModel.kt
+        │   │   │   │
+        │   │   │   ├── state/
+        │   │   │   ├── event/
+        │   │   │   └── effect/
+        │   │   │
+        │   │   ├── services/
+        │   │   │   ├── StepsCounter.kt
+        │   │   │   ├── StepsCounterService.kt
+        │   │   │   └── SuggestionFetcher.kt
+        │   │   │
+        │   │   ├── navigation/
+        │   │   │   └── NavGraph.kt
+        │   │   │
+        │   │   └── workers/
+        │   │
+        │   └── res/
+        │       ├── drawable/
+        │       ├── layout/
+        │       ├── menu/
+        │       ├── mipmap/
+        │       ├── navigation/
+        │       └── values/
+        │
+        ├── test/
+        │
+        └── androidTest/
+
+app/
+└── src/
+    ├── main/
+    │
+    ├── test/
+    │   └── java/com/example/bottomnavmenu/
+    │       ├── domain/
+    │       │   ├── usecase/
+    │       │   │   ├── GetStepsUseCaseTest.kt
+    │       │   │   ├── CalculateCaloriesUseCaseTest.kt
+    │       │   │   ├── WeightLossUseCaseTest.kt
+    │       │   │   └── WeightGainUseCaseTest.kt
+    │       │   │
+    │       │   └── repository/
+    │       │
+    │       ├── data/
+    │       │   ├── repository/
+    │       │   │   └── UserStatsRepositoryImplTest.kt
+    │       │   │
+    │       │   └── parser/
+    │       │       └── DataParserTest.kt
+    │       │
+    │       ├── presentation/
+    │       │   └── viewmodel/
+    │       │       ├── HomeViewModelTest.kt
+    │       │       └── StepsViewModelTest.kt
+    │       │
+    │       ├── utils/
+    │       │   └── FakeData.kt
+    │       │
+    │       └── ExampleUnitTest.kt
+    │
+    └── androidTest/
+        └── java/com/example/bottomnavmenu/
+            ├── ui/
+            │   ├── MainActivityTest.kt
+            │   ├── HomeFragmentTest.kt
+            │   └── AddFragmentTest.kt
+            │
+            └── ExampleInstrumentedTest.kt
