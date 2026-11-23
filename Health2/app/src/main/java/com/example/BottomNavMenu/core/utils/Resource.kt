@@ -1,43 +1,22 @@
-
 package com.example.health2.core.utils
 
 /**
- * Représente le résultat d'une opération exécutée
- * dans les différentes couches de Health2.
+ * Représente les différents états d'une opération.
  *
- * @param T Type de la donnée retournée.
+ * Loading : chargement en cours.
+ * Success : opération réussie.
+ * Error : erreur rencontrée.
  */
 sealed class Resource<out T> {
 
-    /**
-     * Opération en cours de chargement.
-     *
-     * @param data Donnée éventuellement disponible.
-     */
-    data class Loading<out T>(
-        val data: T? = null
-    ) : Resource<T>()
+    data object Loading : Resource<Nothing>()
 
-    /**
-     * Opération terminée avec succès.
-     *
-     * @param data Résultat de l'opération.
-     */
-    data class Success<out T>(
+    data class Success<T>(
         val data: T
     ) : Resource<T>()
 
-    /**
-     * Opération terminée avec une erreur.
-     *
-     * @param message Description de l'erreur.
-     * @param throwable Exception éventuellement associée.
-     * @param data Donnée éventuellement disponible.
-     */
-    data class Error<out T>(
+    data class Error(
         val message: String,
-        val throwable: Throwable? = null,
-        val data: T? = null
-    ) : Resource<T>()
+        val exception: Throwable? = null
+    ) : Resource<Nothing>()
 }
-   
