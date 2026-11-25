@@ -1,0 +1,41 @@
+
+========== STRUCTURE GENERALE ==========
+[OK] Sources principales : app/src/main
+[OK] Package BottomNavMenu : app/src/main/java/com/example/BottomNavMenu
+[OK] Couche DATA : app/src/main/java/com/example/BottomNavMenu/data
+[OK] Couche DOMAIN : app/src/main/java/com/example/BottomNavMenu/domain
+[OK] Couche PRESENTATION : app/src/main/java/com/example/BottomNavMenu/presentation
+[OK] Couche CORE : app/src/main/java/com/example/BottomNavMenu/core
+[OK] Adapters : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters
+[MISSING] ViewModels : app/src/main/java/com/example/BottomNavMenu/presentation/ui/viewmodel
+[OK] Navigation : app/src/main/java/com/example/BottomNavMenu/presentation/ui/navigation
+[OK] Services : app/src/main/java/com/example/BottomNavMenu/services
+[MISSING] Workers : app/src/main/java/com/example/BottomNavMenu/workers
+[MISSING] Layouts : app/src/main/res/layout
+[MISSING] Drawables : app/src/main/res/drawable
+[MISSING] Menus : app/src/main/res/menu
+[OK] Values : app/src/main/res/values
+[OK] Tests unitaires : app/src/test
+[OK] Tests instrumentes : app/src/androidTest
+[MISSING] Android Manifest : app/src/main/AndroidManifest.xml
+[MISSING] Gradle Settings : settings.gradle.kts
+[MISSING] Gradle Application : app/build.gradle.kts
+
+========== ADAPTERS ==========
+[OK] Adapter CardAdapterForAdd.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForAdd.kt
+[OK] Adapter CardAdapterForHome.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForHome.kt
+[OK] Adapter CardAdapterForSuggestion.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForSuggestion.kt
+[OK] Adapter CardAdapterForView.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForView.kt
+
+========== VIEWMODELS ==========
+[MISSING] ViewModel HomeViewModel.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/viewmodel/HomeViewModel.kt
+[MISSING] ViewModel StepsViewModel.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/viewmodel/StepsViewModel.kt
+[MISSING] ViewModel WeightViewModel.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/viewmodel/WeightViewModel.kt
+[MISSING] ViewModel CaloriesViewModel.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/viewmodel/CaloriesViewModel.kt
+[MISSING] ViewModel SleepViewModel.kt : app/src/main/java/com/example/BottomNavMenu/presentation/ui/viewmodel/SleepViewModel.kt
+[OK] SecurePreferences : app/src/main/java/com/example/BottomNavMenu/core/security/SecurePreferences.kt
+[OK] SecurityConfig : app/src/main/java/com/example/BottomNavMenu/core/security/SecurityConfig.kt
+[OK] InputValidator : app/src/main/java/com/example/BottomNavMenu/core/security/InputValidator.kt
+[OK] DataSanitizer : app/src/main/java/com/example/BottomNavMenu/core/security/DataSanitizer.kt
+[OK] SecureLogger : app/src/main/java/com/example/BottomNavMenu/core/security/SecureLogger.kt
+[OK] Network Security Config : app/src/main/res/xml/network_security_config.xml

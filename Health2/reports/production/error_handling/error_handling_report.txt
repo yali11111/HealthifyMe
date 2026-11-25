@@ -1,0 +1,25 @@
+BottomNavMenu - PRODUCTION PARTIE 06
+ERROR HANDLING
+
+Date : 2026-11-25 19:20:47
+Fichiers crees : 9
+Fichiers conserves : 0
+
+Fichiers :
+app/src/main/java/com/example/BottomNavMenu/core/common/AppError.kt
+app/src/main/java/com/example/BottomNavMenu/core/common/AppResult.kt
+app/src/main/java/com/example/BottomNavMenu/core/common/ErrorHandler.kt
+app/src/main/java/com/example/BottomNavMenu/core/common/ErrorMapper.kt
+app/src/main/java/com/example/BottomNavMenu/core/common/ErrorMessages.kt
+app/src/main/java/com/example/BottomNavMenu/core/common/NetworkResult.kt
+app/src/main/java/com/example/BottomNavMenu/core/common/ValidationResult.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/error/ApiException.kt
+app/src/main/java/com/example/BottomNavMenu/domain/common/Result.kt
+
+VERIFICATIONS NECESSAIRES :
+- Compatibilite ErrorMapper / ApiError
+- Gestion des annulations Coroutines
+- Gestion des erreurs Room
+- Integration avec les repositories
+- Integration avec les ViewModels
+- Tests unitaires

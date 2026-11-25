@@ -1,0 +1,196 @@
+apiVersion: monitoring.coreos.com/v1
+
+kind: PrometheusRule
+
+metadata:
+
+  name: health2-alerts
+
+  namespace: monitoring
+
+  labels:
+
+    release: health2-monitoring
+
+    app.kubernetes.io/name: health2
+
+spec:
+
+  groups:
+
+    # ==============================================
+    # BACKEND
+    # ==============================================
+
+    - name: health2.backend
+
+      rules:
+
+        - alert: BackendDown
+
+          expr: |
+            up{namespace="health2"} == 0
+
+          for: 2m
+
+          labels:
+
+            severity: critical
+
+            service: health2-backend
+
+          annotations:
+
+            summary: "Backend Health2 indisponible"
+
+            description: "Une cible supervisee dans le namespace health2 ne repond plus."
+
+        - alert: HighHTTP5xxRate
+
+          expr: |
+            (
+              sum(rate(http_server_requests_seconds_count{
+                namespace="health2",
+                status=~"5.."
+              }[5m]))
+              /
+              clamp_min(
+                sum(rate(http_server_requests_seconds_count{
+                  namespace="health2"
+                }[5m])),
+                0.001
+              )
+            ) > 0.05
+
+          for: 5m
+
+          labels:
+
+            severity: warning
+
+            service: health2-backend
+
+          annotations:
+
+            summary: "Taux d'erreurs HTTP 5xx eleve"
+
+            description: "Plus de 5 pour cent des requetes HTTP echouent."
+
+    # ==============================================
+    # KUBERNETES
+    # ==============================================
+
+    - name: health2.kubernetes
+
+      rules:
+
+        - alert: PodRestarting
+
+          expr: |
+            increase(kube_pod_container_status_restarts_total{
+              namespace="health2"
+            }[15m]) > 3
+
+          for: 2m
+
+          labels:
+
+            severity: warning
+
+          annotations:
+
+            summary: "Redemarrages repetes d'un conteneur"
+
+            description: "Un conteneur Health2 a redemarre plusieurs fois."
+
+        - alert: PodNotReady
+
+          expr: |
+            kube_pod_status_ready{
+              namespace="health2",
+              condition="true"
+            } == 0
+
+          for: 5m
+
+          labels:
+
+            severity: critical
+
+          annotations:
+
+            summary: "Pod Health2 non disponible"
+
+            description: "Un pod Health2 n'est pas pret depuis cinq minutes."
+
+    # ==============================================
+    # INFRASTRUCTURE
+    # ==============================================
+
+    - name: health2.infrastructure
+
+      rules:
+
+        - alert: HighCPUUsage
+
+          expr: |
+            100 *
+            (
+              1 -
+              avg by(instance) (
+                rate(node_cpu_seconds_total{
+                  mode="idle"
+                }[5m])
+              )
+            ) > 85
+
+          for: 10m
+
+          labels:
+
+            severity: warning
+
+          annotations:
+
+            summary: "Utilisation CPU elevee"
+
+            description: "Le CPU d'un serveur depasse 85 pour cent."
+
+        - alert: HighMemoryUsage
+
+          expr: |
+            100 *
+            (
+              1 -
+              node_memory_MemAvailable_bytes /
+              node_memory_MemTotal_bytes
+            ) > 90
+
+          for: 10m
+
+          labels:
+
+            severity: warning
+
+          annotations:
+
+            summary: "Memoire serveur elevee"
+
+            description: "La memoire utilisee depasse 90 pour cent."
+
+        - alert: PrometheusTargetDown
+
+          expr: |
+            up == 0
+
+          for: 5m
+
+          labels:
+
+            severity: critical
+
+          annotations:
+
+            summary: "Cible Prometheus indisponible"
+
+            description: "Une cible de supervision ne repond plus."

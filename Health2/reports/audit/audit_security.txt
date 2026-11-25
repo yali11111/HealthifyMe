@@ -1,0 +1,8 @@
+
+========== SECURITE ANDROID ==========
+[WARNING] Fichier absent : app/src/main/AndroidManifest.xml
+[WARNING] Fichier absent : app/src/main/AndroidManifest.xml
+[WARNING] Fichier absent : app/build.gradle.kts
+
+========== RECHERCHE DE SECRETS POTENTIELS ==========
+[INFO] Les correspondances doivent etre examinees manuellement.

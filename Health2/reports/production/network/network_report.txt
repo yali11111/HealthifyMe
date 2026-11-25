@@ -1,0 +1,29 @@
+BottomNavMenu - PRODUCTION PARTIE 04
+NETWORK / API
+
+Date : 2026-11-25 19:19:29
+Fichiers crees : 12
+Fichiers conserves : 0
+
+Fichiers réseau :
+app/src/main/java/com/example/BottomNavMenu/core/network/ApiErrorHandler.kt
+app/src/main/java/com/example/BottomNavMenu/core/network/AuthInterceptor.kt
+app/src/main/java/com/example/BottomNavMenu/core/network/NetworkConstants.kt
+app/src/main/java/com/example/BottomNavMenu/core/network/NetworkInterceptor.kt
+app/src/main/java/com/example/BottomNavMenu/core/network/NetworkModule.kt
+app/src/main/java/com/example/BottomNavMenu/core/network/NetworkMonitor.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/ApiService.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/CaloriesApi.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/DownloadURL.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/GetNearbyPlacesData.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/SleepApi.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/StepsApi.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/SuggestionApi.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/UserApi.kt
+app/src/main/java/com/example/BottomNavMenu/data/remote/api/WeightApi.kt
+
+DEPENDANCES A VERIFIER :
+- Retrofit
+- OkHttp
+- Gson
+- Kotlin Coroutines

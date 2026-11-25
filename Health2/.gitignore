@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+
+database/backups/*
+!database/backups/.gitkeep
+
+database/data/
+dev1/.env
+audit/.env
+prod-senior/.env

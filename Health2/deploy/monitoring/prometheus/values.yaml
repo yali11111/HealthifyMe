@@ -1,0 +1,138 @@
+# ==================================================
+# HEALTH2 - KUBE PROMETHEUS STACK
+# ==================================================
+
+# Prometheus Operator
+
+prometheusOperator:
+
+  enabled: true
+
+# Prometheus
+
+prometheus:
+
+  enabled: true
+
+  prometheusSpec:
+
+    replicas: 1
+
+    retention: 15d
+
+    scrapeInterval: 30s
+
+    evaluationInterval: 30s
+
+    serviceMonitorSelectorNilUsesHelmValues: false
+
+    serviceMonitorSelector:
+      matchLabels:
+        release: health2-monitoring
+
+    serviceMonitorNamespaceSelector: {}
+
+    ruleSelectorNilUsesHelmValues: false
+
+    ruleSelector:
+      matchLabels:
+        release: health2-monitoring
+
+    ruleNamespaceSelector: {}
+
+    storageSpec:
+
+      volumeClaimTemplate:
+
+        spec:
+
+          accessModes:
+            - ReadWriteOnce
+
+          resources:
+
+            requests:
+              storage: 20Gi
+
+# Grafana
+
+grafana:
+
+  enabled: true
+
+  replicas: 1
+
+  admin:
+    existingSecret: health2-grafana-admin
+
+  service:
+
+    type: ClusterIP
+
+    port: 80
+
+  persistence:
+
+    enabled: true
+
+    size: 10Gi
+
+  defaultDashboardsEnabled: true
+
+# Alertmanager
+
+alertmanager:
+
+  enabled: true
+
+  alertmanagerSpec:
+
+    replicas: 1
+
+    storage:
+
+      volumeClaimTemplate:
+
+        spec:
+
+          accessModes:
+            - ReadWriteOnce
+
+          resources:
+
+            requests:
+              storage: 5Gi
+
+# Node Exporter
+
+nodeExporter:
+
+  enabled: true
+
+# Kubernetes State Metrics
+
+kubeStateMetrics:
+
+  enabled: true
+
+# Default dashboards and alerts
+
+defaultRules:
+
+  create: true
+
+  rules:
+
+    alertmanager: true
+    etcd: true
+    general: true
+    k8s: true
+    kubeApiserver: true
+    kubePrometheusNodeAlerting: true
+    kubePrometheusNodeRecording: true
+    kubernetesApps: true
+    kubernetesResources: true
+    kubernetesStorage: true
+    network: true
+    node: true
+    prometheus: true

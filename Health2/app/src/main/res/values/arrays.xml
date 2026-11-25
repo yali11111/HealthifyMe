@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="health_categories">
+
+        <item>Activité physique</item>
+        <item>Poids</item>
+        <item>Calories</item>
+        <item>Sommeil</item>
+
+    </string-array>
+
+    <string-array name="activity_levels">
+
+        <item>Sédentaire</item>
+        <item>Légèrement actif</item>
+        <item>Modérément actif</item>
+        <item>Très actif</item>
+        <item>Extrêmement actif</item>
+
+    </string-array>
+
+    <string-array name="sleep_phases">
+
+        <item>Sommeil léger</item>
+        <item>Sommeil profond</item>
+        <item>Sommeil paradoxal</item>
+        <item>Éveil</item>
+
+    </string-array>
+
+</resources>

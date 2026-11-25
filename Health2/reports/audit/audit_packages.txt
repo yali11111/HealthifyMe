@@ -1,0 +1,115 @@
+
+========== PACKAGES KOTLIN ==========
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/data/repository/ExerciseRepositoryImpl.kt
+package com.example.health2.data.repository | app/src/main/java/com/example/BottomNavMenu/data/repository/UserStatsRepositoryImpl.kt
+package com.example.health2.data.repository | app/src/main/java/com/example/BottomNavMenu/data/repository/UserStatsRepository.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/data/repository/SuggestionRepositoryImpl.kt
+package com.example.health2.data.local.db.entity | app/src/main/java/com/example/BottomNavMenu/data/local/db/entity/UserStatsEntity.kt
+package com.example.health2.data.local.db.dao | app/src/main/java/com/example/BottomNavMenu/data/local/db/dao/UserStatsDao.kt
+package com.example.health2.data.local.db | app/src/main/java/com/example/BottomNavMenu/data/local/db/AppDatabase.kt
+package com.example.BottomNavMenu.data.remote.mapper | app/src/main/java/com/example/BottomNavMenu/data/remote/mapper/StepsMapper.kt
+package com.example.BottomNavMenu.data.remote.mapper | app/src/main/java/com/example/BottomNavMenu/data/remote/mapper/SleepMapper.kt
+package com.example.BottomNavMenu.data.remote.mapper | app/src/main/java/com/example/BottomNavMenu/data/remote/mapper/WeightMapper.kt
+package com.example.BottomNavMenu.data.remote.mapper | app/src/main/java/com/example/BottomNavMenu/data/remote/mapper/CaloriesMapper.kt
+package com.example.BottomNavMenu.data.remote.mapper | app/src/main/java/com/example/BottomNavMenu/data/remote/mapper/UserMapper.kt
+package com.example.BottomNavMenu.data.remote.mapper | app/src/main/java/com/example/BottomNavMenu/data/remote/mapper/ApiResponseMapper.kt
+package com.example.BottomNavMenu.data.remote.mapper | app/src/main/java/com/example/BottomNavMenu/data/remote/mapper/SuggestionMapper.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/data/remote/api/GetNearbyPlacesData.kt
+package com.example.health2.data.remote.api | app/src/main/java/com/example/BottomNavMenu/data/remote/api/DownloadURL.kt
+package com.example.health2.data.remote.api | app/src/main/java/com/example/BottomNavMenu/data/remote/api/ApiService.kt
+package com.example.health2.data.remote.response | app/src/main/java/com/example/BottomNavMenu/data/remote/response/GetNearbyPlacesData.kt
+package com.example.health2.data.remote.response | app/src/main/java/com/example/BottomNavMenu/data/remote/response/ErrorResponse.kt
+package com.example.health2.data.remote.response | app/src/main/java/com/example/BottomNavMenu/data/remote/response/ApiResponse.kt
+package com.example.health2.data.remote.dto | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/UserStatsDto.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/StepsResponse.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/UserResponse.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/WeightResponse.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/CaloriesResponse.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/SleepResponse.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/ErrorResponse.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/SuggestionResponse.kt
+package com.example.BottomNavMenu.data.remote.dto.response | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/response/ApiResponse.kt
+package com.example.health2.data.remote.dto | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/SuggestionDto.kt
+package com.example.health2.data.remote.dto | app/src/main/java/com/example/BottomNavMenu/data/remote/dto/ExerciseDto.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/services/StepsCounterService.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/domain/repository/SuggestionRepository.kt
+package com.example.health2.domain.repository | app/src/main/java/com/example/BottomNavMenu/domain/repository/ExerciseRepository.kt
+package com.example.BottomNavMenu.domain.repository | app/src/main/java/com/example/BottomNavMenu/domain/repository/UserStatsRepository.kt
+package com.example.BottomNavMenu.domain.model | app/src/main/java/com/example/BottomNavMenu/domain/model/CaloriesField.kt
+package com.example.BottomNavMenu.domain.model | app/src/main/java/com/example/BottomNavMenu/domain/model/SleepField.kt
+package com.example.BottomNavMenu.domain.model | app/src/main/java/com/example/BottomNavMenu/domain/model/Card.kt
+package com.example.BottomNavMenu.domain.model | app/src/main/java/com/example/BottomNavMenu/domain/model/SuggestionStructure.kt
+package com.example.BottomNavMenu.domain.model | app/src/main/java/com/example/BottomNavMenu/domain/model/WeightField.kt
+package com.example.health2.domain.usecase | app/src/main/java/com/example/BottomNavMenu/domain/usecase/WeightGainUseCase.kt
+package com.example.health2.domain.usecase | app/src/main/java/com/example/BottomNavMenu/domain/usecase/GetSuggestionsUseCase.kt
+package com.example.health2.domain.usecase | app/src/main/java/com/example/BottomNavMenu/domain/usecase/CalculateCaloriesUseCase.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/domain/usecase/WeightLossUseCase.kt
+package com.example.health2.domain.usecase | app/src/main/java/com/example/BottomNavMenu/domain/usecase/CalculateSleepUseCase.kt
+package com.example.health2.domain.usecase | app/src/main/java/com/example/BottomNavMenu/domain/usecase/GetStepsUseCase.kt
+package com.example.health2.domain.exercise | app/src/main/java/com/example/BottomNavMenu/domain/exercise/ArmExercise.kt
+package com.example.health2.domain.exercise | app/src/main/java/com/example/BottomNavMenu/domain/exercise/LegExercise.kt
+package com.example.health2.domain.exercise | app/src/main/java/com/example/BottomNavMenu/domain/exercise/AbsExercise.kt
+package com.example.BottomNavMenu.di | app/src/main/java/com/example/BottomNavMenu/di/DatabaseModule.kt
+package com.example.BottomNavMenu.di | app/src/main/java/com/example/BottomNavMenu/di/NetworkModule.kt
+package com.example.BottomNavMenu.di | app/src/main/java/com/example/BottomNavMenu/di/AppModule.kt
+package com.example.BottomNavMenu.di | app/src/main/java/com/example/BottomNavMenu/di/RepositoryModule.kt
+package com.example.health2.core.extensions | app/src/main/java/com/example/BottomNavMenu/core/extensions/DateExtensions.kt
+package com.example.health2.core.extensions | app/src/main/java/com/example/BottomNavMenu/core/extensions/ContextExtensions.kt
+package com.example.health2.core.extensions | app/src/main/java/com/example/BottomNavMenu/core/extensions/NumberExtensions.kt
+package com.example.health2.core.extensions | app/src/main/java/com/example/BottomNavMenu/core/extensions/FlowExtensions.kt
+package com.example.health2.core.utils | app/src/main/java/com/example/BottomNavMenu/core/utils/DateTimeAxisValueFormatter.kt
+package com.example.health2.core.utils | app/src/main/java/com/example/BottomNavMenu/core/utils/DateAxisValueFormatter.kt
+package com.example.health2.core.utils | app/src/main/java/com/example/BottomNavMenu/core/utils/DataParser.kt
+package com.example.health2.core.utils | app/src/main/java/com/example/BottomNavMenu/core/utils/Resource.kt
+package com.example.health2.core.utils | app/src/main/java/com/example/BottomNavMenu/core/utils/Constants.kt
+package com.example.health2.core.preferences | app/src/main/java/com/example/BottomNavMenu/core/preferences/PreferencesKeys.kt
+package com.example.health2.core.preferences | app/src/main/java/com/example/BottomNavMenu/core/preferences/PreferencesManager.kt
+package com.example.BottomNavMenu.core.security | app/src/main/java/com/example/BottomNavMenu/core/security/SecurePreferences.kt
+package com.example.BottomNavMenu.core.security | app/src/main/java/com/example/BottomNavMenu/core/security/DataSanitizer.kt
+package com.example.BottomNavMenu.core.security | app/src/main/java/com/example/BottomNavMenu/core/security/SecurityConfig.kt
+package com.example.BottomNavMenu.core.security | app/src/main/java/com/example/BottomNavMenu/core/security/InputValidator.kt
+package com.example.BottomNavMenu.core.security | app/src/main/java/com/example/BottomNavMenu/core/security/SecureLogger.kt
+package com.example.health2.core.dispatcher | app/src/main/java/com/example/BottomNavMenu/core/dispatcher/AppDispatchers.kt
+package com.example.BottomNavMenu.presentation.ui.workers | app/src/main/java/com/example/BottomNavMenu/presentation/ui/workers/SuggestionWorker.kt
+package com.example.BottomNavMenu.presentation.ui.workers | app/src/main/java/com/example/BottomNavMenu/presentation/ui/workers/HealthDataWorker.kt
+package com.example.BottomNavMenu.presentation.ui.workers | app/src/main/java/com/example/BottomNavMenu/presentation/ui/workers/StepsSyncWorker.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForSuggestion.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForAdd.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForView.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/presentation/ui/adapters/CardAdapterForHome.kt
+package com.example.health2.presentation.ui.fragments | app/src/main/java/com/example/BottomNavMenu/presentation/ui/fragments/ViewFragment.kt
+package com.example.health2.presentation.ui.fragments | app/src/main/java/com/example/BottomNavMenu/presentation/ui/fragments/AddFragment.kt
+package com.example.health2.presentation.ui.fragments | app/src/main/java/com/example/BottomNavMenu/presentation/ui/fragments/HomeFragment.kt
+package com.example.BottomNavMenu.presentation.ui.services | app/src/main/java/com/example/BottomNavMenu/presentation/ui/services/StepsCounter.kt
+package com.example.BottomNavMenu.presentation.ui.services | app/src/main/java/com/example/BottomNavMenu/presentation/ui/services/SuggestionFetcher.kt
+package com.example.BottomNavMenu.presentation.ui.services | app/src/main/java/com/example/BottomNavMenu/presentation/ui/services/StepsCounterService.kt
+package com.example.BottomNavMenu.presentation.ui.navigation | app/src/main/java/com/example/BottomNavMenu/presentation/ui/navigation/NavigationRoutes.kt
+package com.example.BottomNavMenu.presentation.ui.navigation | app/src/main/java/com/example/BottomNavMenu/presentation/ui/navigation/BottomNavigation.kt
+package com.example.BottomNavMenu.presentation.ui.navigation | app/src/main/java/com/example/BottomNavMenu/presentation/ui/navigation/AppNavigation.kt
+package com.example.health2.presentation.ui.activities | app/src/main/java/com/example/BottomNavMenu/presentation/ui/activities/MainActivity.kt
+package com.example.health2.presentation.ui.activities | app/src/main/java/com/example/BottomNavMenu/presentation/ui/activities/MapsActivity.kt
+package com.example.health2.presentation.ui.adapters | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/CardAdapterForSuggestion.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/weight/WeightDetailScreen.kt
+package com.example.health2.presentation.ui.screens.weight | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/weight/WeightScreen.kt
+package com.example.health2.presentation.ui.screens.calories | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/calories/CaloriesScreen.kt
+package com.example.health2.presentation.ui.screens.calories | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/calories/CaloriesDetailScreen.kt
+package com.example.health2.presentation.ui.screens.sleep | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/sleep/SleepScreen.kt
+[WARNING] Package absent : app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/sleep/SleepDetailScreen.kt
+package com.example.health2.presentation.ui.adapters | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/CardAdapterForAdd.kt
+package com.example.health2.presentation.ui.adapters | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/CardAdapterForView.kt
+package com.example.health2.presentation.ui.adapters | app/src/main/java/com/example/BottomNavMenu/presentation/ui/screens/CardAdapterForHome.kt
+package com.example.health2.presentation.ui.viewmodel | app/src/main/java/com/example/BottomNavMenu/presentation/viewmodel/StepsViewModel.kt
+package com.example.health2.presentation.ui.viewmodel | app/src/main/java/com/example/BottomNavMenu/presentation/viewmodel/CaloriesViewModel.kt
+package com.example.health2.presentation.ui.viewmodel | app/src/main/java/com/example/BottomNavMenu/presentation/viewmodel/SleepViewModel.kt
+package com.example.health2.presentation.ui.viewmodel | app/src/main/java/com/example/BottomNavMenu/presentation/viewmodel/WeightViewModel.kt
+package com.example.health2.presentation.ui.viewmodel | app/src/main/java/com/example/BottomNavMenu/presentation/viewmodel/HomeViewModel.kt
+package com.example.bottomnavmenu.domain.usecase | app/src/test/java/com/example/bottomnavmenu/domain/usecase/WeightLossUseCaseTest.kt
+package com.example.bottomnavmenu.domain.usecase | app/src/test/java/com/example/bottomnavmenu/domain/usecase/GetStepsUseCaseTest.kt
+package com.example.bottomnavmenu.domain.usecase | app/src/test/java/com/example/bottomnavmenu/domain/usecase/CalculateCaloriesUseCaseTest.kt
+package com.example.bottomnavmenu.domain.usecase | app/src/test/java/com/example/bottomnavmenu/domain/usecase/WeightGainUseCaseTest.kt
+package com.example.bottomnavmenu.ui | app/src/androidTest/java/com/example/bottomnavmenu/ui/MainActivityTest.kt
+package com.example.bottomnavmenu.ui | app/src/androidTest/java/com/example/bottomnavmenu/ui/AddFragmentTest.kt
+package com.example.bottomnavmenu.ui | app/src/androidTest/java/com/example/bottomnavmenu/ui/HomeFragmentTest.kt
+package com.example.bottomnavmenu | app/src/androidTest/java/com/example/bottomnavmenu/ExampleInstrumentedTest.kt
+
+========== PACKAGES A VERIFIER ==========

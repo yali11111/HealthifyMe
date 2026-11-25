@@ -1,0 +1,50 @@
+services:
+
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - dev1_postgres:/var/lib/postgresql/data
+      - ./database/init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - dev1_network
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - dev1_redis:/data
+    networks:
+      - dev1_network
+
+  adminer:
+    image: adminer:latest
+    profiles:
+      - tools
+    ports:
+      - "127.0.0.1:6432:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - dev1_network
+
+volumes:
+  dev1_postgres:
+  dev1_redis:
+
+networks:
+  dev1_network:
+    name: health2_dev1_network

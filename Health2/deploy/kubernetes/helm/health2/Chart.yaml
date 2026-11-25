@@ -1,0 +1,11 @@
+apiVersion: v2
+
+name: health2
+
+description: Health2 Production Backend
+
+type: application
+
+version: 1.0.0
+
+appVersion: "1.0.0"

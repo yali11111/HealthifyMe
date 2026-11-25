@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Couleurs principales -->
+
+    <color name="health_primary">#2196F3</color>
+    <color name="health_primary_dark">#1565C0</color>
+    <color name="health_secondary">#26A69A</color>
+
+    <!-- Couleurs de fond -->
+
+    <color name="health_background">#F5F7FA</color>
+    <color name="health_surface">#FFFFFF</color>
+
+    <!-- Textes -->
+
+    <color name="health_text_primary">#212121</color>
+    <color name="health_text_secondary">#757575</color>
+
+    <!-- Etats -->
+
+    <color name="health_success">#4CAF50</color>
+    <color name="health_warning">#FFC107</color>
+    <color name="health_error">#F44336</color>
+
+    <!-- Autres -->
+
+    <color name="health_border">#E0E0E0</color>
+    <color name="health_sleep">#673AB7</color>
+    <color name="health_calories">#FF7043</color>
+
+</resources>

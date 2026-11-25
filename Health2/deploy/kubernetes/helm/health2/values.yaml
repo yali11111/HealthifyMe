@@ -1,0 +1,148 @@
+# ==================================================
+# HEALTH2 - DEFAULT HELM VALUES
+# ==================================================
+
+replicaCount: 2
+
+image:
+
+  repository: ghcr.io/YOUR_ORGANIZATION/health2-backend
+
+  tag: "CHANGE_ME"
+
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+
+nameOverride: ""
+
+fullnameOverride: ""
+
+serviceAccount:
+
+  create: true
+
+  automount: false
+
+  annotations: {}
+
+  name: ""
+
+podAnnotations: {}
+
+podLabels: {}
+
+podSecurityContext:
+
+  runAsNonRoot: true
+
+  runAsUser: 10001
+
+  runAsGroup: 10001
+
+  fsGroup: 10001
+
+securityContext:
+
+  allowPrivilegeEscalation: false
+
+  readOnlyRootFilesystem: true
+
+  capabilities:
+
+    drop:
+      - ALL
+
+service:
+
+  type: ClusterIP
+
+  port: 80
+
+  targetPort: 8080
+
+  protocol: TCP
+
+containerPort: 8080
+
+config:
+
+  springProfile: staging
+
+  serverPort: "8080"
+
+  managementPort: "8080"
+
+  managementHealthPath: /actuator/health
+
+  readinessPath: /actuator/health/readiness
+
+  livenessPath: /actuator/health/liveness
+
+  javaToolOptions: "-XX:MaxRAMPercentage=75.0"
+
+# Secret Kubernetes existant.
+# Les identifiants ne sont jamais places dans values.yaml.
+
+existingSecret: health2-backend-secrets
+
+resources:
+
+  requests:
+
+    cpu: 250m
+
+    memory: 512Mi
+
+  limits:
+
+    cpu: "1"
+
+    memory: 1Gi
+
+autoscaling:
+
+  enabled: false
+
+  minReplicas: 2
+
+  maxReplicas: 10
+
+  targetCPUUtilizationPercentage: 70
+
+  targetMemoryUtilizationPercentage: 80
+
+podDisruptionBudget:
+
+  enabled: true
+
+  minAvailable: 1
+
+terminationGracePeriodSeconds: 30
+
+revisionHistoryLimit: 5
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+topologySpreadConstraints:
+
+  enabled: true
+
+  maxSkew: 1
+
+  topologyKey: kubernetes.io/hostname
+
+  whenUnsatisfiable: ScheduleAnyway
+
+  minDomains: 1
+
+# ServiceMonitor is managed separately
+# by DEVOPS PARTIE 11.
+
+monitoring:
+
+  enabled: false

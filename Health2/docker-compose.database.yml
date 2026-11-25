@@ -1,0 +1,53 @@
+services:
+
+  postgres:
+
+    image: postgres:16-alpine
+
+    container_name: BottomNavMenu-postgres
+
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    environment:
+
+      POSTGRES_DB: ${POSTGRES_DB:?POSTGRES_DB obligatoire}
+
+      POSTGRES_USER: ${POSTGRES_ADMIN_USER:?POSTGRES_ADMIN_USER obligatoire}
+
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN_PASSWORD:?POSTGRES_ADMIN_PASSWORD obligatoire}
+
+      BottomNavMenu_DB_USER: ${BottomNavMenu_DB_USER:?BottomNavMenu_DB_USER obligatoire}
+
+      BottomNavMenu_DB_PASSWORD: ${BottomNavMenu_DB_PASSWORD:?BottomNavMenu_DB_PASSWORD obligatoire}
+
+    ports:
+
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+
+    volumes:
+
+      - BottomNavMenu_postgres_data:/var/lib/postgresql/data
+
+      - ./database/init/01-create-app-user.sh:/docker-entrypoint-initdb.d/01-create-app-user.sh:ro
+
+    healthcheck:
+
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$$POSTGRES_USER" -d "$$POSTGRES_DB"
+
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+
+  BottomNavMenu_postgres_data:
+    name: BottomNavMenu_postgres_data

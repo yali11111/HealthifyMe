@@ -1,0 +1,22 @@
+BottomNavMenu - PRODUCTION PARTIE 05
+HILT / DEPENDENCY INJECTION
+
+Date : 2026-11-25 19:19:29
+Fichiers crees : 6
+Fichiers conserves : 0
+
+Fichiers HILT :
+app/src/main/java/com/example/BottomNavMenu/core/di/AppModule.kt
+app/src/main/java/com/example/BottomNavMenu/core/di/DatabaseModule.kt
+app/src/main/java/com/example/BottomNavMenu/core/di/NetworkModule.kt
+app/src/main/java/com/example/BottomNavMenu/core/di/RepositoryModule.kt
+app/src/main/java/com/example/BottomNavMenu/core/di/SecurityModule.kt
+
+VERIFICATIONS NECESSAIRES :
+- Plugin Hilt Gradle
+- Hilt Compiler
+- Room Database
+- Repositories
+- SecurePreferences
+- NetworkModule
+- AndroidManifest

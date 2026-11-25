@@ -1,0 +1,31 @@
+replicaCount: 1
+
+config:
+
+  springProfile: dev
+
+image:
+
+  tag: "dev"
+
+autoscaling:
+
+  enabled: false
+
+podDisruptionBudget:
+
+  enabled: false
+
+resources:
+
+  requests:
+
+    cpu: 100m
+
+    memory: 256Mi
+
+  limits:
+
+    cpu: 500m
+
+    memory: 512Mi

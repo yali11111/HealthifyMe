@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+
+metadata:
+  name: health2
+
+  labels:
+    app.kubernetes.io/name: health2
+    environment: production

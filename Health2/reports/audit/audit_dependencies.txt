@@ -1,0 +1,12 @@
+
+========== DEPENDANCES GRADLE ==========
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts
+[WARNING] Fichier absent : app/build.gradle.kts

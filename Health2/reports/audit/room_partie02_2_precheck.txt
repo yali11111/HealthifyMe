@@ -1,0 +1,524 @@
+
+==================================================
+1. DOMAIN REPOSITORIES
+==================================================
+app/src/main/java/com/example/BottomNavMenu/domain/repository/ExerciseRepository.kt
+app/src/main/java/com/example/BottomNavMenu/domain/repository/SuggestionRepository.kt
+app/src/main/java/com/example/BottomNavMenu/domain/repository/UserStatsRepository.kt
+
+==================================================
+2. DOMAIN MODELS
+==================================================
+app/src/main/java/com/example/BottomNavMenu/domain/model/CaloriesField.kt
+app/src/main/java/com/example/BottomNavMenu/domain/model/Card.kt
+app/src/main/java/com/example/BottomNavMenu/domain/model/SleepField.kt
+app/src/main/java/com/example/BottomNavMenu/domain/model/SuggestionStructure.kt
+app/src/main/java/com/example/BottomNavMenu/domain/model/WeightField.kt
+
+==================================================
+3. DOMAIN USECASES
+==================================================
+app/src/main/java/com/example/BottomNavMenu/domain/usecase/CalculateCaloriesUseCase.kt
+app/src/main/java/com/example/BottomNavMenu/domain/usecase/CalculateSleepUseCase.kt
+app/src/main/java/com/example/BottomNavMenu/domain/usecase/GetStepsUseCase.kt
+app/src/main/java/com/example/BottomNavMenu/domain/usecase/GetSuggestionsUseCase.kt
+app/src/main/java/com/example/BottomNavMenu/domain/usecase/WeightGainUseCase.kt
+app/src/main/java/com/example/BottomNavMenu/domain/usecase/WeightLossUseCase.kt
+
+==================================================
+4. ROOM DAOS
+==================================================
+app/src/main/java/com/example/BottomNavMenu/data/local/dao/CaloriesDao.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/dao/SleepDao.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/dao/StepsDao.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/dao/UserDao.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/dao/WeightDao.kt
+
+==================================================
+5. ROOM ENTITIES
+==================================================
+app/src/main/java/com/example/BottomNavMenu/data/local/entity/CaloriesEntity.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/entity/SleepEntity.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/entity/StepsEntity.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/entity/UserEntity.kt
+app/src/main/java/com/example/BottomNavMenu/data/local/entity/WeightEntity.kt
+
+==================================================
+6. DATA REPOSITORIES
+==================================================
+app/src/main/java/com/example/BottomNavMenu/data/repository/ExerciseRepositoryImpl.kt
+app/src/main/java/com/example/BottomNavMenu/data/repository/SuggestionRepositoryImpl.kt
+app/src/main/java/com/example/BottomNavMenu/data/repository/UserStatsRepositoryImpl.kt
+app/src/main/java/com/example/BottomNavMenu/data/repository/UserStatsRepository.kt
+
+==================================================
+7. DATA MAPPERS
+==================================================
+[MISSING] app/src/main/java/com/example/BottomNavMenu/data/local/mapper
+
+==================================================
+ 8. CONTENU DES INTERFACES DOMAIN
+==================================================
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/repository/ExerciseRepository.kt
+--------------------------------------------------
+package com.example.health2.domain.repository
+
+import com.example.health2.data.remote.dto.ExerciseDto
+
+/**
+ * Contrat métier pour la gestion des exercices.
+ *
+ * Permet de récupérer les exercices disponibles
+ * dans Health2 et de consulter leurs informations.
+ */
+interface ExerciseRepository {
+
+    /**
+     * Récupère la liste des exercices.
+     *
+     * @param category Catégorie facultative.
+     * @return Liste des exercices ou une erreur.
+     */
+    suspend fun getExercises(
+        category: String? = null
+    ): Result<List<ExerciseDto>>
+
+    /**
+     * Récupère un exercice par son identifiant.
+     *
+     * @param id Identifiant de l'exercice.
+     * @return Exercice demandé ou une erreur.
+     */
+    suspend fun getExerciseById(
+        id: String
+    ): Result<ExerciseDto>
+}
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/repository/SuggestionRepository.kt
+--------------------------------------------------
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/repository/UserStatsRepository.kt
+--------------------------------------------------
+package com.example.BottomNavMenu.domain.repository
+
+import com.example.health2.data.remote.dto.UserStatsDto
+
+/**
+
+Contrat métier pour la gestion des statistiques
+de santé d'un utilisateur.
+Définit les opérations disponibles pour consulter
+les statistiques personnelles. */ interface UserStatsRepository {
+
+/**
+
+Récupère toutes les statistiques d'un utilisateur.
+@param userId Identifiant de l'utilisateur.
+@return Liste des statistiques ou une erreur. */ 
+
+suspend fun getUserStats( userId: String ): Result<List<UserStatsDto>>
+
+/**
+
+Récupère une statistique précise.
+        @param userId Identifiant de l'utilisateur.
+        @param id Identifiant de la mesure.
+        @return Statistique demandée ou une erreur. */ 
+        
+       suspend fun getUserStatById( userId: String, id: String ): Result<UserStatsDto> } 
+       EOF
+
+echo "[1/3] UserStatsRepository.kt OK"
+# ==========================================
+# 2. SUGGESTION REPOSITORY
+# ==========================================
+
+cat > "$REPOSITORY/SuggestionRepository.kt" <<'EOF' 
+package com.example.BottomNavMenu.domain.repository
+
+import com.example.health2.data.remote.dto.SuggestionDto
+
+/**
+
+    Contrat métier pour la gestion des suggestions
+    personnalisées de santé.
+    Les suggestions peuvent concerner :
+        L'activité physique.
+        Le sommeil.
+        L'alimentation.
+        Le bien-être général.
+
+*/ interface SuggestionRepository {
+
+/**
+ * Récupère les suggestions d'un utilisateur.
+ *
+ * @param userId Identifiant de l'utilisateur.
+ * @return Liste des suggestions ou une erreur.
+ */
+suspend fun getSuggestions(
+    userId: String
+): Result<List<SuggestionDto>>
+
+} 
+
+==================================================
+ 9. CONTENU DES USECASES
+==================================================
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/usecase/CalculateCaloriesUseCase.kt
+--------------------------------------------------
+package com.example.health2.domain.usecase
+
+/**
+ * UseCase permettant de calculer les besoins
+ * énergétiques quotidiens d'un utilisateur.
+ *
+ * Formule utilisée : Mifflin-St Jeor.
+ *
+ * Les résultats sont des estimations et ne constituent
+ * pas une prescription nutritionnelle.
+ */
+class CalculateCaloriesUseCase {
+
+    /**
+     * Sexe utilisé pour le calcul métabolique.
+     */
+    enum class Sex {
+        MALE,
+        FEMALE
+    }
+
+    /**
+     * Résultat du calcul calorique.
+     */
+    data class CaloriesResult(
+        val basalMetabolicRate: Double,
+        val dailyCalories: Double,
+        val activityFactor: Double
+    )
+
+    /**
+     * Calcule le métabolisme basal et les besoins quotidiens.
+     *
+     * @param weightKg Poids en kilogrammes.
+     * @param heightCm Taille en centimètres.
+     * @param age Âge en années.
+     * @param sex Sexe utilisé par la formule.
+     * @param activityFactor Coefficient d'activité physique.
+     */
+    operator fun invoke(
+        weightKg: Double,
+        heightCm: Double,
+        age: Int,
+        sex: Sex,
+        activityFactor: Double = 1.2
+    ): CaloriesResult {
+
+        // Vérification du poids
+        require(weightKg.isFinite() && weightKg > 0.0) {
+            "Le poids doit être positif."
+        }
+
+        // Vérification de la taille
+        require(heightCm.isFinite() && heightCm > 0.0) {
+            "La taille doit être positive."
+        }
+
+        // Vérification de l'âge
+        require(age in 1..120) {
+            "L'âge doit être compris entre 1 et 120 ans."
+        }
+
+        // Vérification du niveau d'activité
+        require(
+            activityFactor.isFinite() &&
+            activityFactor in 1.0..2.5
+        ) {
+            "Coefficient d'activité invalide."
+        }
+
+        // Ajustement selon le sexe utilisé par la formule
+        val sexAdjustment = when (sex) {
+            Sex.MALE -> 5.0
+            Sex.FEMALE -> -161.0
+        }
+
+        // Calcul du métabolisme basal
+        val bmr =
+            (10.0 * weightKg) +
+            (6.25 * heightCm) -
+            (5.0 * age) +
+            sexAdjustment
+
+        // Estimation des besoins énergétiques quotidiens
+        val dailyCalories = bmr * activityFactor
+
+        // Retour du résultat
+        return CaloriesResult(
+            basalMetabolicRate = bmr,
+            dailyCalories = dailyCalories,
+            activityFactor = activityFactor
+        )
+    }
+}
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/usecase/CalculateSleepUseCase.kt
+--------------------------------------------------
+package com.example.health2.domain.usecase
+
+/**
+ * UseCase permettant d'analyser la durée du sommeil.
+ *
+ * Toutes les durées sont exprimées en minutes.
+ */
+class CalculateSleepUseCase {
+
+    /**
+     * Résultat de l'analyse du sommeil.
+     */
+    data class SleepResult(
+        val totalDuration: Int,
+        val deepSleep: Int,
+        val lightSleep: Int,
+        val remSleep: Int,
+        val awakeDuration: Int,
+        val sleepEfficiency: Float,
+        val deepSleepPercentage: Float,
+        val remSleepPercentage: Float
+    )
+
+    /**
+     * Analyse les différentes phases du sommeil.
+     *
+     * @param deepSleep Sommeil profond en minutes.
+     * @param lightSleep Sommeil léger en minutes.
+     * @param remSleep Sommeil paradoxal en minutes.
+     * @param awakeDuration Temps d'éveil en minutes.
+     */
+    operator fun invoke(
+        deepSleep: Int,
+        lightSleep: Int,
+        remSleep: Int,
+        awakeDuration: Int = 0
+    ): SleepResult {
+
+        require(deepSleep >= 0) {
+            "La durée du sommeil profond est invalide."
+        }
+
+        require(lightSleep >= 0) {
+            "La durée du sommeil léger est invalide."
+        }
+
+        require(remSleep >= 0) {
+            "La durée du sommeil paradoxal est invalide."
+        }
+
+        require(awakeDuration >= 0) {
+            "La durée d'éveil est invalide."
+        }
+
+        // Durée totale du sommeil
+        val totalSleep = deepSleep + lightSleep + remSleep
+
+        // Durée totale passée au lit
+        val totalNight = totalSleep + awakeDuration
+
+        // Efficacité du sommeil
+        val efficiency = if (totalNight > 0) {
+            totalSleep.toFloat() / totalNight.toFloat() * 100f
+        } else {
+            0f
+        }
+
+        // Pourcentage de sommeil profond
+        val deepPercentage = if (totalSleep > 0) {
+            deepSleep.toFloat() / totalSleep.toFloat() * 100f
+        } else {
+            0f
+        }
+
+        // Pourcentage de sommeil paradoxal
+        val remPercentage = if (totalSleep > 0) {
+            remSleep.toFloat() / totalSleep.toFloat() * 100f
+        } else {
+            0f
+        }
+
+        // Retour du résultat
+        return SleepResult(
+            totalDuration = totalSleep,
+            deepSleep = deepSleep,
+            lightSleep = lightSleep,
+            remSleep = remSleep,
+            awakeDuration = awakeDuration,
+            sleepEfficiency = efficiency,
+            deepSleepPercentage = deepPercentage,
+            remSleepPercentage = remPercentage
+        )
+    }
+}
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/usecase/GetStepsUseCase.kt
+--------------------------------------------------
+package com.example.health2.domain.usecase
+
+import com.example.health2.domain.repository.UserStatsRepository
+import com.example.health2.data.remote.dto.UserStatsDto
+
+/**
+ * UseCase permettant de récupérer les statistiques
+ * d'activité physique d'un utilisateur.
+ *
+ * Les statistiques récupérées comprennent notamment
+ * les données relatives au nombre de pas.
+ */
+class GetStepsUseCase(
+    private val repository: UserStatsRepository
+) {
+
+    /**
+     * Récupère les statistiques d'un utilisateur.
+     *
+     * @param userId Identifiant de l'utilisateur.
+     * @return Liste des statistiques ou une erreur.
+     */
+    suspend operator fun invoke(
+        userId: String
+    ): Result<List<UserStatsDto>> {
+
+        // Vérification de l'identifiant utilisateur
+        if (userId.isBlank()) {
+            return Result.failure(
+                IllegalArgumentException(
+                    "L'identifiant utilisateur est obligatoire."
+                )
+            )
+        }
+
+        // Récupération des statistiques
+        return repository.getUserStats(userId)
+    }
+}
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/usecase/GetSuggestionsUseCase.kt
+--------------------------------------------------
+package com.example.health2.domain.usecase
+
+import com.example.health2.domain.repository.SuggestionRepository
+import com.example.health2.data.remote.dto.SuggestionDto
+
+/**
+ * UseCase permettant de récupérer les suggestions
+ * personnalisées de santé.
+ */
+class GetSuggestionsUseCase(
+    private val repository: SuggestionRepository
+) {
+
+    /**
+     * Récupère les suggestions d'un utilisateur.
+     *
+     * @param userId Identifiant de l'utilisateur.
+     * @return Liste des suggestions ou une erreur.
+     */
+    suspend operator fun invoke(
+        userId: String
+    ): Result<List<SuggestionDto>> {
+
+        // Vérification de l'identifiant utilisateur
+        if (userId.isBlank()) {
+            return Result.failure(
+                IllegalArgumentException(
+                    "L'identifiant utilisateur est obligatoire."
+                )
+            )
+        }
+
+        // Récupération des suggestions
+        return repository.getSuggestions(userId)
+    }
+}
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/usecase/WeightGainUseCase.kt
+--------------------------------------------------
+package com.example.health2.domain.usecase
+
+/**
+ * UseCase permettant de suivre un objectif de prise de poids.
+ *
+ * Les poids sont exprimés en kilogrammes.
+ */
+class WeightGainUseCase {
+
+    /**
+     * Résultat du suivi de prise de poids.
+     */
+    data class WeightGainResult(
+        val currentWeight: Float,
+        val targetWeight: Float,
+        val gainedWeight: Float,
+        val remainingWeight: Float,
+        val progressPercentage: Float,
+        val goalReached: Boolean
+    )
+
+    /**
+     * Calcule la progression vers un objectif de prise de poids.
+     *
+     * @param initialWeight Poids de départ.
+     * @param currentWeight Poids actuel.
+     * @param targetWeight Poids souhaité.
+     */
+    operator fun invoke(
+        initialWeight: Float,
+        currentWeight: Float,
+        targetWeight: Float
+    ): WeightGainResult {
+
+        // Vérification du poids initial
+        require(initialWeight.isFinite() && initialWeight > 0f) {
+            "Le poids initial est invalide."
+        }
+
+        // Vérification du poids actuel
+        require(currentWeight.isFinite() && currentWeight > 0f) {
+            "Le poids actuel est invalide."
+        }
+
+        // Vérification du poids cible
+        require(
+            targetWeight.isFinite() &&
+            targetWeight > initialWeight
+        ) {
+            "Le poids cible doit être supérieur au poids initial."
+        }
+
+        // Quantité totale de poids à gagner
+        val totalToGain = targetWeight - initialWeight
+
+        // Quantité de poids gagnée
+        val gained = currentWeight - initialWeight
+
+        // Pourcentage de progression
+        val progress = (
+            gained / totalToGain
+        ).coerceIn(0f, 1f) * 100f
+
+        // Construction du résultat
+        return WeightGainResult(
+            currentWeight = currentWeight,
+            targetWeight = targetWeight,
+            gainedWeight = gained,
+            remainingWeight = (targetWeight - currentWeight)
+                .coerceAtLeast(0f),
+            progressPercentage = progress,
+            goalReached = currentWeight >= targetWeight
+        )
+    }
+}
+
+FILE: app/src/main/java/com/example/BottomNavMenu/domain/usecase/WeightLossUseCase.kt
+--------------------------------------------------

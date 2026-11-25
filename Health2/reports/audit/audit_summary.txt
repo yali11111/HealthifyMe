@@ -1,0 +1,27 @@
+==================================================
+ BottomNavMenu - AUDIT TECHNIQUE
+==================================================
+Date : 2026-11-25 18:46:28
+Projet : /home/essairic/Documents/HealthifyMe/Health2
+
+
+==================================================
+ RESULTAT FINAL DE L'AUDIT BottomNavMenu
+==================================================
+Date : 2026-11-25 18:46:29
+
+OK       : 22
+WARNING  : 26
+MISSING  : 13
+ERROR    : 0
+
+Fichiers Kotlin MAIN : 103
+Fichiers Kotlin TEST : 4
+Fichiers Kotlin ANDROID TEST : 4
+
+Rapports disponibles dans :
+/home/essairic/Documents/HealthifyMe/Health2/reports/audit
+
+==================================================
+ AUDIT TERMINE
+==================================================

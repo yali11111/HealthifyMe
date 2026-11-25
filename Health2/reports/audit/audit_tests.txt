@@ -1,0 +1,14 @@
+
+========== TESTS UNITAIRES ==========
+Nombre de fichiers unitaires : 4
+app/src/test/java/com/example/bottomnavmenu/domain/usecase/WeightLossUseCaseTest.kt
+app/src/test/java/com/example/bottomnavmenu/domain/usecase/GetStepsUseCaseTest.kt
+app/src/test/java/com/example/bottomnavmenu/domain/usecase/CalculateCaloriesUseCaseTest.kt
+app/src/test/java/com/example/bottomnavmenu/domain/usecase/WeightGainUseCaseTest.kt
+
+========== TESTS INSTRUMENTES ==========
+Nombre de fichiers instrumentes : 4
+app/src/androidTest/java/com/example/bottomnavmenu/ui/MainActivityTest.kt
+app/src/androidTest/java/com/example/bottomnavmenu/ui/AddFragmentTest.kt
+app/src/androidTest/java/com/example/bottomnavmenu/ui/HomeFragmentTest.kt
+app/src/androidTest/java/com/example/bottomnavmenu/ExampleInstrumentedTest.kt
