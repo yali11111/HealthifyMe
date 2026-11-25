@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.health2.app-debug-32:/navigation_nav_graph.xml.flat",
+        "source": "com.example.health2.app-main-34:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.health2.app-debug-32:/xml_network_security_config.xml.flat",
+        "source": "com.example.health2.app-main-34:/xml/network_security_config.xml"
+    }
+]

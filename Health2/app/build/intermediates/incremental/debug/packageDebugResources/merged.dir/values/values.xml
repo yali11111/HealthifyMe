@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity_levels">
+
+        <item>Sédentaire</item>
+        <item>Légèrement actif</item>
+        <item>Modérément actif</item>
+        <item>Très actif</item>
+        <item>Extrêmement actif</item>
+
+    </string-array>
+    <string-array name="health_categories">
+
+        <item>Activité physique</item>
+        <item>Poids</item>
+        <item>Calories</item>
+        <item>Sommeil</item>
+
+    </string-array>
+    <string-array name="sleep_phases">
+
+        <item>Sommeil léger</item>
+        <item>Sommeil profond</item>
+        <item>Sommeil paradoxal</item>
+        <item>Éveil</item>
+
+    </string-array>
+    <color name="health_background">#F5F7FA</color>
+    <color name="health_border">#E0E0E0</color>
+    <color name="health_calories">#FF7043</color>
+    <color name="health_error">#F44336</color>
+    <color name="health_primary">#2196F3</color>
+    <color name="health_primary_dark">#1565C0</color>
+    <color name="health_secondary">#26A69A</color>
+    <color name="health_sleep">#673AB7</color>
+    <color name="health_success">#4CAF50</color>
+    <color name="health_surface">#FFFFFF</color>
+    <color name="health_text_primary">#212121</color>
+    <color name="health_text_secondary">#757575</color>
+    <color name="health_warning">#FFC107</color>
+    <dimen name="button_height">52dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_small">4dp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_title">24sp</dimen>
+    <string name="action_add">Ajouter une mesure</string>
+    <string name="action_cancel">Annuler</string>
+    <string name="action_refresh">Actualiser</string>
+    <string name="action_save">Enregistrer</string>
+    <string name="app_description">Votre santé au quotidien</string>
+    <string name="app_name">BottomNavMenu</string>
+    <string name="calories_title">Besoins énergétiques</string>
+    <string name="calories_unit">kcal</string>
+    <string name="empty_data">Aucune donnée disponible.</string>
+    <string name="error_generic">Une erreur est survenue.</string>
+    <string name="home_subtitle">Votre tableau de bord santé</string>
+    <string name="home_title">Bienvenue sur BottomNavMenu</string>
+    <string name="loading">Chargement...</string>
+    <string name="nav_add">Ajouter</string>
+    <string name="nav_home">Accueil</string>
+    <string name="nav_view">Statistiques</string>
+    <string name="sleep_title">Analyse du sommeil</string>
+    <string name="sleep_unit">heures</string>
+    <string name="steps_goal">Objectif quotidien</string>
+    <string name="steps_title">Activité physique</string>
+    <string name="steps_unit">pas</string>
+    <string name="success_save">Données enregistrées.</string>
+    <string name="weight_title">Suivi du poids</string>
+    <string name="weight_unit">kg</string>
+    <style name="Theme.BottomNavMenu" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/health_primary</item>
+
+        <item name="colorSecondary">@color/health_secondary</item>
+
+        <item name="android:colorAccent">@color/health_primary</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:navigationBarColor">@color/health_background</item>
+
+        <item name="android:statusBarColor">@color/health_background</item>
+
+        <item name="android:windowBackground">@color/health_background</item>
+
+    </style>
+</resources>

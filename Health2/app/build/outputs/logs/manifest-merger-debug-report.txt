@@ -1,0 +1,259 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:1-13:12
+INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:1-13:12
+INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:1-13:12
+INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:1-13:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/essairic/.gradle/caches/transforms-4/1763a80c47f3e30ab61741240f63a6d1/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/essairic/.gradle/caches/transforms-4/15a08e940e331ec8c3df5a6e4db711c5/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.dagger:hilt-android:2.52] /home/essairic/.gradle/caches/transforms-4/be540c119113c14dbf43cd85967d149b/transformed/hilt-android-2.52/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.fragment:fragment:1.8.5] /home/essairic/.gradle/caches/transforms-4/aaaeb17d0624dca5c4d2244a55361727/transformed/fragment-1.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.fragment:fragment-ktx:1.8.5] /home/essairic/.gradle/caches/transforms-4/98bfb57fefbe1b0633baac5dfe202ba3/transformed/fragment-ktx-1.8.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.9.3] /home/essairic/.gradle/caches/transforms-4/5df5a2d7a82b2f59221653abdcafb7b4/transformed/activity-1.9.3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/essairic/.gradle/caches/transforms-4/4ce06ac8e7042d974d826e57de14a0c1/transformed/activity-ktx-1.9.3/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/essairic/.gradle/caches/transforms-4/c83ed3ad7d7b160738db152454662858/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/essairic/.gradle/caches/transforms-4/9de1054f014179f3a4240b9586b77880/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/essairic/.gradle/caches/transforms-4/ef237d1365920fd08f885ec4e00baf95/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/essairic/.gradle/caches/transforms-4/3d952c107225d887dc4052667da3d0e3/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/essairic/.gradle/caches/transforms-4/c5e97eccb6c303fe1425ffd1d0283e41/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /home/essairic/.gradle/caches/transforms-4/3b21badabbceb0221f3de4d731560a82/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/essairic/.gradle/caches/transforms-4/6c0f1d02a0de91e7b4a16fcac4472336/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/essairic/.gradle/caches/transforms-4/681e026ab49a2daba10cda8356b10f78/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/essairic/.gradle/caches/transforms-4/1010c5a17dbb9f1ca7c21eb96e15ceae/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/essairic/.gradle/caches/transforms-4/ec7b7c9e6ef8c39985122e31d64cd5c5/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/2202eedf05cfbffe87ecf3fca5647328/transformed/lifecycle-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/essairic/.gradle/caches/transforms-4/2ee8e2f41aef3a09d2d76e7d299eca12/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/e5f6d86fb96da3e762b572554afa7b2a/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/essairic/.gradle/caches/transforms-4/0608472d2c70cba93b5285bb708cf3bb/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/d76f0d2231d15ca7dba9d121b8bb95d3/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/essairic/.gradle/caches/transforms-4/f283224e560a70dafb5c3b0a186e0990/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/essairic/.gradle/caches/transforms-4/14fe45d0ead0402bd5bd9855f9622508/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/essairic/.gradle/caches/transforms-4/47641c8b1e7e6e51688531aeb923c522/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.15.0] /home/essairic/.gradle/caches/transforms-4/e282bf83d39e28460a08eba7354584e3/transformed/core-ktx-1.15.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/essairic/.gradle/caches/transforms-4/0a4d7b230a7a543f274d001f46738a31/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/essairic/.gradle/caches/transforms-4/ddfc91bba2072dbf9486208fe2fad335/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /home/essairic/.gradle/caches/transforms-4/d944505b78994c899581571c1cdce36f/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/essairic/.gradle/caches/transforms-4/2253963964487c94ca5be60381aca695/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/essairic/.gradle/caches/transforms-4/7c3240a6251a980bd011c75c3c8b3cfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.52] /home/essairic/.gradle/caches/transforms-4/2588dbf3d88bc58c9706096f78d0eaa0/transformed/dagger-lint-aar-2.52/AndroidManifest.xml:16:1-19:12
+	package
+		INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:11-69
+application
+ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:5:5-11:19
+INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:5:5-11:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:8:9-35
+	android:label
+		ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:7:9-32
+	android:allowBackup
+		ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:9:9-65
+uses-sdk
+INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/essairic/.gradle/caches/transforms-4/1763a80c47f3e30ab61741240f63a6d1/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/essairic/.gradle/caches/transforms-4/1763a80c47f3e30ab61741240f63a6d1/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/essairic/.gradle/caches/transforms-4/15a08e940e331ec8c3df5a6e4db711c5/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] /home/essairic/.gradle/caches/transforms-4/15a08e940e331ec8c3df5a6e4db711c5/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.dagger:hilt-android:2.52] /home/essairic/.gradle/caches/transforms-4/be540c119113c14dbf43cd85967d149b/transformed/hilt-android-2.52/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.52] /home/essairic/.gradle/caches/transforms-4/be540c119113c14dbf43cd85967d149b/transformed/hilt-android-2.52/AndroidManifest.xml:18:3-42
+MERGED from [androidx.fragment:fragment:1.8.5] /home/essairic/.gradle/caches/transforms-4/aaaeb17d0624dca5c4d2244a55361727/transformed/fragment-1.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.5] /home/essairic/.gradle/caches/transforms-4/aaaeb17d0624dca5c4d2244a55361727/transformed/fragment-1.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.8.5] /home/essairic/.gradle/caches/transforms-4/98bfb57fefbe1b0633baac5dfe202ba3/transformed/fragment-ktx-1.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.8.5] /home/essairic/.gradle/caches/transforms-4/98bfb57fefbe1b0633baac5dfe202ba3/transformed/fragment-ktx-1.8.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.9.3] /home/essairic/.gradle/caches/transforms-4/5df5a2d7a82b2f59221653abdcafb7b4/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.9.3] /home/essairic/.gradle/caches/transforms-4/5df5a2d7a82b2f59221653abdcafb7b4/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/essairic/.gradle/caches/transforms-4/4ce06ac8e7042d974d826e57de14a0c1/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.9.3] /home/essairic/.gradle/caches/transforms-4/4ce06ac8e7042d974d826e57de14a0c1/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/essairic/.gradle/caches/transforms-4/c83ed3ad7d7b160738db152454662858/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/essairic/.gradle/caches/transforms-4/c83ed3ad7d7b160738db152454662858/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/essairic/.gradle/caches/transforms-4/9de1054f014179f3a4240b9586b77880/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/essairic/.gradle/caches/transforms-4/9de1054f014179f3a4240b9586b77880/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/essairic/.gradle/caches/transforms-4/ef237d1365920fd08f885ec4e00baf95/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/essairic/.gradle/caches/transforms-4/ef237d1365920fd08f885ec4e00baf95/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/essairic/.gradle/caches/transforms-4/3d952c107225d887dc4052667da3d0e3/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/essairic/.gradle/caches/transforms-4/3d952c107225d887dc4052667da3d0e3/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/essairic/.gradle/caches/transforms-4/c5e97eccb6c303fe1425ffd1d0283e41/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/essairic/.gradle/caches/transforms-4/c5e97eccb6c303fe1425ffd1d0283e41/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /home/essairic/.gradle/caches/transforms-4/3b21badabbceb0221f3de4d731560a82/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/essairic/.gradle/caches/transforms-4/3b21badabbceb0221f3de4d731560a82/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/essairic/.gradle/caches/transforms-4/6c0f1d02a0de91e7b4a16fcac4472336/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/essairic/.gradle/caches/transforms-4/6c0f1d02a0de91e7b4a16fcac4472336/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/essairic/.gradle/caches/transforms-4/681e026ab49a2daba10cda8356b10f78/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/essairic/.gradle/caches/transforms-4/681e026ab49a2daba10cda8356b10f78/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/essairic/.gradle/caches/transforms-4/1010c5a17dbb9f1ca7c21eb96e15ceae/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/essairic/.gradle/caches/transforms-4/1010c5a17dbb9f1ca7c21eb96e15ceae/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/essairic/.gradle/caches/transforms-4/ec7b7c9e6ef8c39985122e31d64cd5c5/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.7] /home/essairic/.gradle/caches/transforms-4/ec7b7c9e6ef8c39985122e31d64cd5c5/transformed/lifecycle-livedata-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/2202eedf05cfbffe87ecf3fca5647328/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/2202eedf05cfbffe87ecf3fca5647328/transformed/lifecycle-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/essairic/.gradle/caches/transforms-4/2ee8e2f41aef3a09d2d76e7d299eca12/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.7] /home/essairic/.gradle/caches/transforms-4/2ee8e2f41aef3a09d2d76e7d299eca12/transformed/lifecycle-viewmodel-2.8.7/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/e5f6d86fb96da3e762b572554afa7b2a/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/e5f6d86fb96da3e762b572554afa7b2a/transformed/lifecycle-viewmodel-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/essairic/.gradle/caches/transforms-4/0608472d2c70cba93b5285bb708cf3bb/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.7] /home/essairic/.gradle/caches/transforms-4/0608472d2c70cba93b5285bb708cf3bb/transformed/lifecycle-livedata-core-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/d76f0d2231d15ca7dba9d121b8bb95d3/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.7] /home/essairic/.gradle/caches/transforms-4/d76f0d2231d15ca7dba9d121b8bb95d3/transformed/lifecycle-runtime-ktx-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/essairic/.gradle/caches/transforms-4/f283224e560a70dafb5c3b0a186e0990/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.7] /home/essairic/.gradle/caches/transforms-4/f283224e560a70dafb5c3b0a186e0990/transformed/lifecycle-livedata-core-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/essairic/.gradle/caches/transforms-4/14fe45d0ead0402bd5bd9855f9622508/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7] /home/essairic/.gradle/caches/transforms-4/14fe45d0ead0402bd5bd9855f9622508/transformed/lifecycle-viewmodel-ktx-2.8.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/essairic/.gradle/caches/transforms-4/47641c8b1e7e6e51688531aeb923c522/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/essairic/.gradle/caches/transforms-4/47641c8b1e7e6e51688531aeb923c522/transformed/lifecycle-viewmodel-savedstate-2.8.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.15.0] /home/essairic/.gradle/caches/transforms-4/e282bf83d39e28460a08eba7354584e3/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.15.0] /home/essairic/.gradle/caches/transforms-4/e282bf83d39e28460a08eba7354584e3/transformed/core-ktx-1.15.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/essairic/.gradle/caches/transforms-4/0a4d7b230a7a543f274d001f46738a31/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/essairic/.gradle/caches/transforms-4/0a4d7b230a7a543f274d001f46738a31/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/essairic/.gradle/caches/transforms-4/ddfc91bba2072dbf9486208fe2fad335/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/essairic/.gradle/caches/transforms-4/ddfc91bba2072dbf9486208fe2fad335/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /home/essairic/.gradle/caches/transforms-4/d944505b78994c899581571c1cdce36f/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /home/essairic/.gradle/caches/transforms-4/d944505b78994c899581571c1cdce36f/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/essairic/.gradle/caches/transforms-4/2253963964487c94ca5be60381aca695/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/essairic/.gradle/caches/transforms-4/2253963964487c94ca5be60381aca695/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/essairic/.gradle/caches/transforms-4/7c3240a6251a980bd011c75c3c8b3cfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/essairic/.gradle/caches/transforms-4/7c3240a6251a980bd011c75c3c8b3cfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.dagger:dagger-lint-aar:2.52] /home/essairic/.gradle/caches/transforms-4/2588dbf3d88bc58c9706096f78d0eaa0/transformed/dagger-lint-aar-2.52/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.52] /home/essairic/.gradle/caches/transforms-4/2588dbf3d88bc58c9706096f78d0eaa0/transformed/dagger-lint-aar-2.52/AndroidManifest.xml:18:3-42
+	android:targetSdkVersion
+		INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+permission#com.example.health2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+uses-permission#com.example.health2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
