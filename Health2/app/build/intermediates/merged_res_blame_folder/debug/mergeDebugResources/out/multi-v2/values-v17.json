@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.health2.app-mergeDebugResources-30:/values-v17/values-v17.xml",
+            "outputFile": "com.example.health2.app-mergeDebugResources-47:/values-v17/values-v17.xml",
             "map": [
                 {
                     "source": "/home/essairic/.gradle/caches/transforms-4/15a08e940e331ec8c3df5a6e4db711c5/transformed/appcompat-1.7.0/res/values-v17/values-v17.xml",

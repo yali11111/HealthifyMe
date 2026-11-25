@@ -4,22 +4,39 @@ ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidMani
 INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:1-13:12
 INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:1-13:12
 INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:3:1-13:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/essairic/.gradle/caches/transforms-4/243fdc1897fbeab97e9f5878f631c501/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/fba954e34dd2032dcadf6cb93f95d059/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/essairic/.gradle/caches/transforms-4/490f9b418ddf7b6bc76049a05d56a4e5/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/2ba13158c67dff995ad6d579e909fb8c/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /home/essairic/.gradle/caches/transforms-4/99e266feb29cbb65abb0d3c87d1f4fa6/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/1ee0ae0ffc31284ff7ea3beaa8ceec42/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/d98db25e98f798f8ad795957f016f1fc/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /home/essairic/.gradle/caches/transforms-4/97ba7133c5a9e16bb61c2f6bf5443086/transformed/navigation-ui-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.material:material:1.12.0] /home/essairic/.gradle/caches/transforms-4/6675f7e06740f29fdb04508c062d4a22/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/essairic/.gradle/caches/transforms-4/1763a80c47f3e30ab61741240f63a6d1/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/essairic/.gradle/caches/transforms-4/295c9e15b582124c971612c997335701/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.7.0] /home/essairic/.gradle/caches/transforms-4/15a08e940e331ec8c3df5a6e4db711c5/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.dagger:hilt-android:2.52] /home/essairic/.gradle/caches/transforms-4/be540c119113c14dbf43cd85967d149b/transformed/hilt-android-2.52/AndroidManifest.xml:16:1-19:12
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/essairic/.gradle/caches/transforms-4/f9bb3a2e21ccf8538a5cbdc19a944fef/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment:1.8.5] /home/essairic/.gradle/caches/transforms-4/aaaeb17d0624dca5c4d2244a55361727/transformed/fragment-1.8.5/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.fragment:fragment-ktx:1.8.5] /home/essairic/.gradle/caches/transforms-4/98bfb57fefbe1b0633baac5dfe202ba3/transformed/fragment-ktx-1.8.5/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.9.3] /home/essairic/.gradle/caches/transforms-4/5df5a2d7a82b2f59221653abdcafb7b4/transformed/activity-1.9.3/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.9.3] /home/essairic/.gradle/caches/transforms-4/4ce06ac8e7042d974d826e57de14a0c1/transformed/activity-ktx-1.9.3/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/essairic/.gradle/caches/transforms-4/c83ed3ad7d7b160738db152454662858/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/essairic/.gradle/caches/transforms-4/9de1054f014179f3a4240b9586b77880/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /home/essairic/.gradle/caches/transforms-4/ef237d1365920fd08f885ec4e00baf95/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/essairic/.gradle/caches/transforms-4/7dcb2394f58d53b02ca5818eaa49c791/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/essairic/.gradle/caches/transforms-4/37c8523680028a67b7230a2b0a6fa9dc/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/essairic/.gradle/caches/transforms-4/c797b4e764f4f1191a7dbf0529aa3750/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] /home/essairic/.gradle/caches/transforms-4/36e521b1b23e22ca3c593d37bb8e8673/transformed/transition-1.5.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/essairic/.gradle/caches/transforms-4/073ae209fe98840958cd9957ede18895/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/essairic/.gradle/caches/transforms-4/3d952c107225d887dc4052667da3d0e3/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/essairic/.gradle/caches/transforms-4/c5e97eccb6c303fe1425ffd1d0283e41/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/essairic/.gradle/caches/transforms-4/b5024f6e2590bf94db3fd1632be57057/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/essairic/.gradle/caches/transforms-4/67e484c1148fbb8de265e863728601aa/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /home/essairic/.gradle/caches/transforms-4/3b21badabbceb0221f3de4d731560a82/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/essairic/.gradle/caches/transforms-4/6c0f1d02a0de91e7b4a16fcac4472336/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/essairic/.gradle/caches/transforms-4/681e026ab49a2daba10cda8356b10f78/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
@@ -37,10 +54,14 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.7] /home/essa
 MERGED from [androidx.core:core-ktx:1.15.0] /home/essairic/.gradle/caches/transforms-4/e282bf83d39e28460a08eba7354584e3/transformed/core-ktx-1.15.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/essairic/.gradle/caches/transforms-4/0a4d7b230a7a543f274d001f46738a31/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/essairic/.gradle/caches/transforms-4/630807c3b37bcd9125fb2d65ab1d156e/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/essairic/.gradle/caches/transforms-4/ddfc91bba2072dbf9486208fe2fad335/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] /home/essairic/.gradle/caches/transforms-4/d944505b78994c899581571c1cdce36f/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/essairic/.gradle/caches/transforms-4/8c0cf3c5962a7ac8353a28e7d9b8ee3b/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/essairic/.gradle/caches/transforms-4/2340b6037736590a4a6db4e44ef971f7/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/essairic/.gradle/caches/transforms-4/a3c0876ce6c2d0a3889caa4a58cf7a80/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/essairic/.gradle/caches/transforms-4/2253963964487c94ca5be60381aca695/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/essairic/.gradle/caches/transforms-4/7c3240a6251a980bd011c75c3c8b3cfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.52] /home/essairic/.gradle/caches/transforms-4/2588dbf3d88bc58c9706096f78d0eaa0/transformed/dagger-lint-aar-2.52/AndroidManifest.xml:16:1-19:12
@@ -55,8 +76,14 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.52] /home/essairic/.gradle/cach
 application
 ADDED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:5:5-11:19
 INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml:5:5-11:19
+MERGED from [com.google.android.material:material:1.12.0] /home/essairic/.gradle/caches/transforms-4/6675f7e06740f29fdb04508c062d4a22/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] /home/essairic/.gradle/caches/transforms-4/6675f7e06740f29fdb04508c062d4a22/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/essairic/.gradle/caches/transforms-4/295c9e15b582124c971612c997335701/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/essairic/.gradle/caches/transforms-4/295c9e15b582124c971612c997335701/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.8.7] /home/essairic/.gradle/caches/transforms-4/0206c1889f27f73e6a5d3991ef52615f/transformed/lifecycle-process-2.8.7/AndroidManifest.xml:23:5-33:19
@@ -83,12 +110,36 @@ uses-sdk
 INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
 INJECTED from /home/essairic/Documents/HealthifyMe/Health2/app/src/main/AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/essairic/.gradle/caches/transforms-4/243fdc1897fbeab97e9f5878f631c501/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/essairic/.gradle/caches/transforms-4/243fdc1897fbeab97e9f5878f631c501/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/fba954e34dd2032dcadf6cb93f95d059/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/fba954e34dd2032dcadf6cb93f95d059/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/essairic/.gradle/caches/transforms-4/490f9b418ddf7b6bc76049a05d56a4e5/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/essairic/.gradle/caches/transforms-4/490f9b418ddf7b6bc76049a05d56a4e5/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/2ba13158c67dff995ad6d579e909fb8c/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/2ba13158c67dff995ad6d579e909fb8c/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /home/essairic/.gradle/caches/transforms-4/99e266feb29cbb65abb0d3c87d1f4fa6/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.7.7] /home/essairic/.gradle/caches/transforms-4/99e266feb29cbb65abb0d3c87d1f4fa6/transformed/navigation-fragment-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/1ee0ae0ffc31284ff7ea3beaa8ceec42/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/1ee0ae0ffc31284ff7ea3beaa8ceec42/transformed/navigation-fragment-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/d98db25e98f798f8ad795957f016f1fc/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui-ktx:2.7.7] /home/essairic/.gradle/caches/transforms-4/d98db25e98f798f8ad795957f016f1fc/transformed/navigation-ui-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /home/essairic/.gradle/caches/transforms-4/97ba7133c5a9e16bb61c2f6bf5443086/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.7.7] /home/essairic/.gradle/caches/transforms-4/97ba7133c5a9e16bb61c2f6bf5443086/transformed/navigation-ui-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /home/essairic/.gradle/caches/transforms-4/6675f7e06740f29fdb04508c062d4a22/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] /home/essairic/.gradle/caches/transforms-4/6675f7e06740f29fdb04508c062d4a22/transformed/material-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/essairic/.gradle/caches/transforms-4/1763a80c47f3e30ab61741240f63a6d1/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /home/essairic/.gradle/caches/transforms-4/1763a80c47f3e30ab61741240f63a6d1/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/essairic/.gradle/caches/transforms-4/295c9e15b582124c971612c997335701/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /home/essairic/.gradle/caches/transforms-4/295c9e15b582124c971612c997335701/transformed/constraintlayout-2.0.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.7.0] /home/essairic/.gradle/caches/transforms-4/15a08e940e331ec8c3df5a6e4db711c5/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.7.0] /home/essairic/.gradle/caches/transforms-4/15a08e940e331ec8c3df5a6e4db711c5/transformed/appcompat-1.7.0/AndroidManifest.xml:5:5-44
 MERGED from [com.google.dagger:hilt-android:2.52] /home/essairic/.gradle/caches/transforms-4/be540c119113c14dbf43cd85967d149b/transformed/hilt-android-2.52/AndroidManifest.xml:18:3-42
 MERGED from [com.google.dagger:hilt-android:2.52] /home/essairic/.gradle/caches/transforms-4/be540c119113c14dbf43cd85967d149b/transformed/hilt-android-2.52/AndroidManifest.xml:18:3-42
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/essairic/.gradle/caches/transforms-4/f9bb3a2e21ccf8538a5cbdc19a944fef/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.1.0-beta02] /home/essairic/.gradle/caches/transforms-4/f9bb3a2e21ccf8538a5cbdc19a944fef/transformed/viewpager2-1.1.0-beta02/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.8.5] /home/essairic/.gradle/caches/transforms-4/aaaeb17d0624dca5c4d2244a55361727/transformed/fragment-1.8.5/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment:1.8.5] /home/essairic/.gradle/caches/transforms-4/aaaeb17d0624dca5c4d2244a55361727/transformed/fragment-1.8.5/AndroidManifest.xml:5:5-44
 MERGED from [androidx.fragment:fragment-ktx:1.8.5] /home/essairic/.gradle/caches/transforms-4/98bfb57fefbe1b0633baac5dfe202ba3/transformed/fragment-ktx-1.8.5/AndroidManifest.xml:5:5-44
@@ -97,24 +148,34 @@ MERGED from [androidx.activity:activity:1.9.3] /home/essairic/.gradle/caches/tra
 MERGED from [androidx.activity:activity:1.9.3] /home/essairic/.gradle/caches/transforms-4/5df5a2d7a82b2f59221653abdcafb7b4/transformed/activity-1.9.3/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity-ktx:1.9.3] /home/essairic/.gradle/caches/transforms-4/4ce06ac8e7042d974d826e57de14a0c1/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-ktx:1.9.3] /home/essairic/.gradle/caches/transforms-4/4ce06ac8e7042d974d826e57de14a0c1/transformed/activity-ktx-1.9.3/AndroidManifest.xml:5:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.3.2] /home/essairic/.gradle/caches/transforms-4/1b596e9936b6eab79adb78c79c410957/transformed/recyclerview-1.3.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/essairic/.gradle/caches/transforms-4/c83ed3ad7d7b160738db152454662858/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/essairic/.gradle/caches/transforms-4/c83ed3ad7d7b160738db152454662858/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/essairic/.gradle/caches/transforms-4/9de1054f014179f3a4240b9586b77880/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/essairic/.gradle/caches/transforms-4/9de1054f014179f3a4240b9586b77880/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/essairic/.gradle/caches/transforms-4/ef237d1365920fd08f885ec4e00baf95/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /home/essairic/.gradle/caches/transforms-4/ef237d1365920fd08f885ec4e00baf95/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/essairic/.gradle/caches/transforms-4/7dcb2394f58d53b02ca5818eaa49c791/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/essairic/.gradle/caches/transforms-4/7dcb2394f58d53b02ca5818eaa49c791/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/essairic/.gradle/caches/transforms-4/37c8523680028a67b7230a2b0a6fa9dc/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/essairic/.gradle/caches/transforms-4/37c8523680028a67b7230a2b0a6fa9dc/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/essairic/.gradle/caches/transforms-4/c797b4e764f4f1191a7dbf0529aa3750/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/essairic/.gradle/caches/transforms-4/c797b4e764f4f1191a7dbf0529aa3750/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] /home/essairic/.gradle/caches/transforms-4/36e521b1b23e22ca3c593d37bb8e8673/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] /home/essairic/.gradle/caches/transforms-4/36e521b1b23e22ca3c593d37bb8e8673/transformed/transition-1.5.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/essairic/.gradle/caches/transforms-4/073ae209fe98840958cd9957ede18895/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/essairic/.gradle/caches/transforms-4/073ae209fe98840958cd9957ede18895/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/essairic/.gradle/caches/transforms-4/3d952c107225d887dc4052667da3d0e3/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/essairic/.gradle/caches/transforms-4/3d952c107225d887dc4052667da3d0e3/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/essairic/.gradle/caches/transforms-4/c5e97eccb6c303fe1425ffd1d0283e41/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/essairic/.gradle/caches/transforms-4/c5e97eccb6c303fe1425ffd1d0283e41/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/essairic/.gradle/caches/transforms-4/6eb26c843bb9a97f3ae029797af9cc19/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/essairic/.gradle/caches/transforms-4/b5024f6e2590bf94db3fd1632be57057/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/essairic/.gradle/caches/transforms-4/b5024f6e2590bf94db3fd1632be57057/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/essairic/.gradle/caches/transforms-4/67e484c1148fbb8de265e863728601aa/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/essairic/.gradle/caches/transforms-4/67e484c1148fbb8de265e863728601aa/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/essairic/.gradle/caches/transforms-4/3b21badabbceb0221f3de4d731560a82/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /home/essairic/.gradle/caches/transforms-4/3b21badabbceb0221f3de4d731560a82/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/essairic/.gradle/caches/transforms-4/6c0f1d02a0de91e7b4a16fcac4472336/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
@@ -149,6 +210,8 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/essairic/.gradle/
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/essairic/.gradle/caches/transforms-4/0a4d7b230a7a543f274d001f46738a31/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/essairic/.gradle/caches/transforms-4/8ca3b311bc70dbf77f4625275aaa8314/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/essairic/.gradle/caches/transforms-4/630807c3b37bcd9125fb2d65ab1d156e/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/essairic/.gradle/caches/transforms-4/630807c3b37bcd9125fb2d65ab1d156e/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/essairic/.gradle/caches/transforms-4/ddfc91bba2072dbf9486208fe2fad335/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/essairic/.gradle/caches/transforms-4/ddfc91bba2072dbf9486208fe2fad335/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] /home/essairic/.gradle/caches/transforms-4/bbb13e6d3c08d4a072dfffaf8569d6b5/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
@@ -157,6 +220,12 @@ MERGED from [androidx.tracing:tracing:1.2.0] /home/essairic/.gradle/caches/trans
 MERGED from [androidx.tracing:tracing:1.2.0] /home/essairic/.gradle/caches/transforms-4/d944505b78994c899581571c1cdce36f/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/essairic/.gradle/caches/transforms-4/f761eaf28c55c7b63314851ea049d143/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/essairic/.gradle/caches/transforms-4/8c0cf3c5962a7ac8353a28e7d9b8ee3b/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/essairic/.gradle/caches/transforms-4/8c0cf3c5962a7ac8353a28e7d9b8ee3b/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/essairic/.gradle/caches/transforms-4/2340b6037736590a4a6db4e44ef971f7/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/essairic/.gradle/caches/transforms-4/2340b6037736590a4a6db4e44ef971f7/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/essairic/.gradle/caches/transforms-4/a3c0876ce6c2d0a3889caa4a58cf7a80/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/essairic/.gradle/caches/transforms-4/a3c0876ce6c2d0a3889caa4a58cf7a80/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/essairic/.gradle/caches/transforms-4/2253963964487c94ca5be60381aca695/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/essairic/.gradle/caches/transforms-4/2253963964487c94ca5be60381aca695/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] /home/essairic/.gradle/caches/transforms-4/7c3240a6251a980bd011c75c3c8b3cfe/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
@@ -189,6 +258,18 @@ ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transfor
 		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/essairic/.gradle/caches/transforms-4/982277372ac559c619f74e379a29368b/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/essairic/.gradle/caches/transforms-4/4e6e5b35751d21d949274b75b5b05442/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.15.0] /home/essairic/.gradle/caches/transforms-4/2518e3178a4bfcfcfab522100002e829/transformed/core-1.15.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
