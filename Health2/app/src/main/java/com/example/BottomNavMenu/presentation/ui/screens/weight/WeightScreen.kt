@@ -1,4 +1,3 @@
-
 package com.example.health2.presentation.ui.screens.weight
 
 import android.graphics.Color
@@ -10,21 +9,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.ProgressBar
 import android.widget.ScrollView
 import android.widget.TextView
-import android.widget.ProgressBar
-
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-
 import com.example.health2.presentation.ui.viewmodel.WeightViewModel
-
 import dagger.hilt.android.AndroidEntryPoint
-
 import kotlinx.coroutines.launch
+import java.util.Locale
 
 /**
  * Écran principal consacré au suivi du poids.
@@ -34,9 +30,9 @@ import kotlinx.coroutines.launch
  * - Poids initial.
  * - Poids cible.
  * - Progression.
- * - Prise ou perte de poids.
+ * - Prise de poids.
+ * - Perte de poids.
  */
-
 @AndroidEntryPoint
 class WeightScreen : Fragment() {
 
@@ -57,92 +53,47 @@ class WeightScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val scrollView = ScrollView(requireContext())
-
-        val layout = LinearLayout(requireContext()).apply {
-
-            orientation = LinearLayout.VERTICAL
-
-            setPadding(32, 40, 32, 32)
-
-            setBackgroundColor(
-                Color.rgb(246, 248, 252)
-            )
+        val scrollView = ScrollView(requireContext()).apply {
+            fillViewport = true
+            setBackgroundColor(Color.rgb(246, 248, 252))
         }
 
-        // =====================================
-        // TITRE
-        // =====================================
+        val layout = LinearLayout(requireContext()).apply {
+            orientation = LinearLayout.VERTICAL
+            setPadding(32, 40, 32, 32)
+        }
 
+        // Titre principal
         val title = TextView(requireContext()).apply {
-
             text = "Suivi du poids"
-
             textSize = 27f
-
-            setTextColor(
-                Color.rgb(35, 45, 75)
-            )
-
+            setTextColor(Color.rgb(35, 45, 75))
             setTypeface(null, Typeface.BOLD)
-
             gravity = Gravity.CENTER
-
             setPadding(0, 0, 0, 12)
         }
 
+        // Sous-titre
         val subtitle = TextView(requireContext()).apply {
-
             text = "Suivez votre évolution corporelle"
-
             textSize = 15f
-
             setTextColor(Color.DKGRAY)
-
             gravity = Gravity.CENTER
-
             setPadding(0, 0, 0, 28)
         }
 
         layout.addView(title)
         layout.addView(subtitle)
 
-        // =====================================
-        // POIDS ACTUEL
-        // =====================================
+        // Cartes statistiques
+        currentWeight = createCard("Poids actuel")
+        initialWeight = createCard("Poids initial")
+        targetWeight = createCard("Poids cible")
+        progressText = createCard("Progression")
+        gainedWeight = createCard("Poids gagné")
+        lostWeight = createCard("Poids perdu")
 
-        currentWeight = createCard(
-            "Poids actuel",
-            "Aucune donnée disponible"
-        )
-
-        // =====================================
-        // POIDS INITIAL
-        // =====================================
-
-        initialWeight = createCard(
-            "Poids initial",
-            "Aucune donnée disponible"
-        )
-
-        // =====================================
-        // POIDS CIBLE
-        // =====================================
-
-        targetWeight = createCard(
-            "Poids cible",
-            "Aucun objectif défini"
-        )
-
-        // =====================================
-        // PROGRESSION
-        // =====================================
-
-        progressText = createCard(
-            "Progression",
-            "Aucune progression disponible"
-        )
-
+        // Barre de progression
         progressBar = ProgressBar(
             requireContext(),
             null,
@@ -150,7 +101,6 @@ class WeightScreen : Fragment() {
         ).apply {
 
             max = 100
-
             progress = 0
 
             progressTintList =
@@ -158,53 +108,23 @@ class WeightScreen : Fragment() {
                     Color.rgb(46, 160, 110)
                 )
 
-            val params = LinearLayout.LayoutParams(
+            layoutParams = LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 24
-            )
-
-            params.setMargins(0, 12, 0, 20)
-
-            layoutParams = params
+            ).apply {
+                setMargins(0, 12, 0, 20)
+            }
         }
 
-        // =====================================
-        // PRISE DE POIDS
-        // =====================================
-
-        gainedWeight = createCard(
-            "Poids gagné",
-            "Aucune donnée disponible"
-        )
-
-        // =====================================
-        // PERTE DE POIDS
-        // =====================================
-
-        lostWeight = createCard(
-            "Poids perdu",
-            "Aucune donnée disponible"
-        )
-
-        // =====================================
-        // ERREURS
-        // =====================================
-
+        // Message d'erreur
         errorMessage = TextView(requireContext()).apply {
-
             textSize = 14f
-
-            setTextColor(Color.RED)
-
+            setTextColor(Color.rgb(200, 50, 50))
             visibility = View.GONE
-
             setPadding(8, 16, 8, 16)
         }
 
-        // =====================================
-        // AJOUT DES ELEMENTS
-        // =====================================
-
+        // Ajout des composants
         layout.addView(currentWeight)
         layout.addView(initialWeight)
         layout.addView(targetWeight)
@@ -219,20 +139,18 @@ class WeightScreen : Fragment() {
         return scrollView
     }
 
-    // =========================================
-    // OBSERVATION DU VIEWMODEL
-    // =========================================
-
     override fun onViewCreated(
         view: View,
         savedInstanceState: Bundle?
     ) {
-
         super.onViewCreated(view, savedInstanceState)
 
         observeWeightState()
     }
 
+    /**
+     * Observe les données du ViewModel.
+     */
     private fun observeWeightState() {
 
         viewLifecycleOwner.lifecycleScope.launch {
@@ -243,470 +161,102 @@ class WeightScreen : Fragment() {
 
                 viewModel.uiState.collect { state ->
 
-                    currentWeight.text =
-                        "Poids actuel\n\n" +
+                    currentWeight.text = buildCardText(
+                        "Poids actuel",
                         formatWeight(state.currentWeight)
+                    )
 
-                    targetWeight.text =
-                        "Poids cible\n\n" +
+                    targetWeight.text = buildCardText(
+                        "Poids cible",
                         formatWeight(state.targetWeight)
+                    )
 
-                    progressText.text =
-                        "Progression\n\n" +
-                        String.format(
-                            java.util.Locale.FRANCE,
-                            "%.1f %%",
-                            state.progressPercentage
-                        )
-
-                    initialWeight.text =
-                        "Poids initial\n\n" +
+                    initialWeight.text = buildCardText(
+                        "Poids initial",
                         "Consultez votre historique"
+                    )
 
-                    gainedWeight.text =
-                        "Poids gagné\n\n" +
+                    gainedWeight.text = buildCardText(
+                        "Poids gagné",
                         formatWeight(state.gainedWeight)
+                    )
 
-                    lostWeight.text =
-                        "Poids perdu\n\n" +
+                    lostWeight.text = buildCardText(
+                        "Poids perdu",
                         formatWeight(state.lostWeight)
+                    )
+
+                    progressText.text = buildCardText(
+                        "Progression",
+                        formatPercentage(state.progressPercentage)
+                    )
 
                     progressBar.progress =
                         state.progressPercentage
                             .coerceIn(0f, 100f)
                             .toInt()
 
-                    errorMessage.text =
-                        state.error ?: ""
+                    // Gestion des erreurs
+                    val error = state.error
+
+                    errorMessage.text = error.orEmpty()
 
                     errorMessage.visibility =
-                        if (state.error != null) {
-                            View.VISIBLE
-                        } else {
+                        if (error.isNullOrBlank()) {
                             View.GONE
+                        } else {
+                            View.VISIBLE
                         }
                 }
             }
         }
     }
 
-    // =========================================
-    // CREATION DES CARTES
-    // =========================================
-
-    private fun createCard(
-        title: String,
-        value: String
-    ): TextView {
+    /**
+     * Crée une carte statistique.
+     */
+    private fun createCard(title: String): TextView {
 
         return TextView(requireContext()).apply {
 
-            text = "$title\n\n$value"
+            text = "$title\n\nChargement..."
 
             textSize = 17f
 
-            setTextColor(
-                Color.rgb(40, 50, 70)
-            )
+            setTextColor(Color.rgb(40, 50, 70))
+
+            gravity = Gravity.CENTER_VERTICAL
 
             setPadding(24, 28, 24, 28)
 
             background = GradientDrawable().apply {
-
                 setColor(Color.WHITE)
-
                 cornerRadius = 22f
-
-                setStroke(
-                    1,
-                    Color.rgb(225, 232, 240)
-                )
-            }
-
-            val params = LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            )
-
-            params.setMargins(0, 8, 0, 8)
-
-            layoutParams = params
-        }
-    }
-
-    // =========================================
-    // FORMATAGE DU POIDS
-    // =========================================
-
-    private fun formatWeight(value: Float?): String {
-
-        if (value == null) {
-            return "Aucune donnée disponible"
-        }
-
-        return String.format(
-            java.util.Locale.FRANCE,
-            "%.1f kg",
-            value
-        )
-    }
-}
-
-    
-    EOF
-
-echo "[5/6] WeightScreen.kt OK"
-# ==========================================
-# 6. WEIGHT DETAIL SCREEN
-# ==========================================
-
-cat > "$BASE/weight/WeightDetailScreen.kt" <<'EOF' 
-package com.example.health2.presentation.ui.screens.weight
-
-import android.graphics.Color
-import android.graphics.Typeface
-import android.graphics.drawable.GradientDrawable
-import android.os.Bundle
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.ScrollView
-import android.widget.TextView
-import android.widget.ProgressBar
-
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.lifecycleScope
-import androidx.lifecycle.repeatOnLifecycle
-
-import com.example.health2.presentation.ui.viewmodel.WeightViewModel
-
-import dagger.hilt.android.AndroidEntryPoint
-
-import kotlinx.coroutines.launch
-
-/**
- * Écran détaillé du suivi du poids.
- *
- * Présente :
- * - Prise de poids.
- * - Perte de poids.
- * - Progression.
- * - Objectifs.
- * - Historique.
- * - Évolution.
- */
-
-@AndroidEntryPoint
-class WeightDetailScreen : Fragment() {
-
-    private val viewModel: WeightViewModel by viewModels()
-
-    private lateinit var gainCard: TextView
-    private lateinit var lossCard: TextView
-    private lateinit var currentCard: TextView
-    private lateinit var targetCard: TextView
-    private lateinit var progressCard: TextView
-    private lateinit var historyCard: TextView
-    private lateinit var evolutionCard: TextView
-
-    private lateinit var progressBar: ProgressBar
-    private lateinit var errorMessage: TextView
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-
-        val scrollView = ScrollView(requireContext())
-
-        val layout = LinearLayout(requireContext()).apply {
-
-            orientation = LinearLayout.VERTICAL
-
-            setPadding(32, 40, 32, 32)
-
-            setBackgroundColor(
-                Color.rgb(246, 248, 252)
-            )
-        }
-
-        // =====================================
-        // TITRE
-        // =====================================
-
-        val title = TextView(requireContext()).apply {
-
-            text = "Détails du poids"
-
-            textSize = 27f
-
-            setTextColor(
-                Color.rgb(35, 45, 75)
-            )
-
-            setTypeface(null, Typeface.BOLD)
-
-            gravity = Gravity.CENTER
-
-            setPadding(0, 0, 0, 12)
-        }
-
-        val subtitle = TextView(requireContext()).apply {
-
-            text = "Analyse de votre progression corporelle"
-
-            textSize = 14f
-
-            setTextColor(Color.DKGRAY)
-
-            gravity = Gravity.CENTER
-
-            setPadding(0, 0, 0, 28)
-        }
-
-        layout.addView(title)
-        layout.addView(subtitle)
-
-        // =====================================
-        // POIDS ACTUEL
-        // =====================================
-
-        currentCard = createDetail(
-            "Poids actuel",
-            "Aucune mesure disponible"
-        )
-
-        // =====================================
-        // OBJECTIF
-        // =====================================
-
-        targetCard = createDetail(
-            "Objectif de poids",
-            "Aucun objectif défini"
-        )
-
-        // =====================================
-        // PRISE DE POIDS
-        // =====================================
-
-        gainCard = createDetail(
-            "Prise de poids",
-            "Suivi de la progression vers un objectif de prise de poids."
-        )
-
-        // =====================================
-        // PERTE DE POIDS
-        // =====================================
-
-        lossCard = createDetail(
-            "Perte de poids",
-            "Suivi de la progression vers un objectif de perte de poids."
-        )
-
-        // =====================================
-        // PROGRESSION
-        // =====================================
-
-        progressCard = createDetail(
-            "Progression",
-            "Aucune progression disponible"
-        )
-
-        progressBar = ProgressBar(
-            requireContext(),
-            null,
-            android.R.attr.progressBarStyleHorizontal
-        ).apply {
-
-            max = 100
-
-            progress = 0
-
-            progressTintList =
-                android.content.res.ColorStateList.valueOf(
-                    Color.rgb(46, 160, 110)
-                )
-
-            layoutParams = LinearLayout.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                24
-            ).apply {
-
-                setMargins(0, 12, 0, 20)
-            }
-        }
-
-        // =====================================
-        // HISTORIQUE
-        // =====================================
-
-        historyCard = createDetail(
-            "Historique",
-            "Consultez vos anciennes mesures de poids."
-        )
-
-        // =====================================
-        // EVOLUTION
-        // =====================================
-
-        evolutionCard = createDetail(
-            "Évolution",
-            "Visualisez les changements de votre poids dans le temps."
-        )
-
-        // =====================================
-        // ERREURS
-        // =====================================
-
-        errorMessage = TextView(requireContext()).apply {
-
-            textSize = 14f
-
-            setTextColor(Color.RED)
-
-            visibility = View.GONE
-
-            setPadding(8, 16, 8, 16)
-        }
-
-        // =====================================
-        // AJOUT DES ELEMENTS
-        // =====================================
-
-        layout.addView(currentCard)
-        layout.addView(targetCard)
-        layout.addView(gainCard)
-        layout.addView(lossCard)
-        layout.addView(progressCard)
-        layout.addView(progressBar)
-        layout.addView(historyCard)
-        layout.addView(evolutionCard)
-        layout.addView(errorMessage)
-
-        scrollView.addView(layout)
-
-        return scrollView
-    }
-
-    // =========================================
-    // OBSERVATION DU VIEWMODEL
-    // =========================================
-
-    override fun onViewCreated(
-        view: View,
-        savedInstanceState: Bundle?
-    ) {
-
-        super.onViewCreated(view, savedInstanceState)
-
-        observeWeightState()
-    }
-
-    private fun observeWeightState() {
-
-        viewLifecycleOwner.lifecycleScope.launch {
-
-            viewLifecycleOwner.repeatOnLifecycle(
-                Lifecycle.State.STARTED
-            ) {
-
-                viewModel.uiState.collect { state ->
-
-                    currentCard.text =
-                        "Poids actuel\n\n" +
-                        formatWeight(state.currentWeight)
-
-                    targetCard.text =
-                        "Objectif de poids\n\n" +
-                        formatWeight(state.targetWeight)
-
-                    gainCard.text =
-                        "Prise de poids\n\n" +
-                        formatWeight(state.gainedWeight)
-
-                    lossCard.text =
-                        "Perte de poids\n\n" +
-                        formatWeight(state.lostWeight)
-
-                    progressCard.text =
-                        "Progression\n\n" +
-                        String.format(
-                            java.util.Locale.FRANCE,
-                            "%.1f %%",
-                            state.progressPercentage
-                        )
-
-                    progressBar.progress =
-                        state.progressPercentage
-                            .coerceIn(0f, 100f)
-                            .toInt()
-
-                    errorMessage.text =
-                        state.error ?: ""
-
-                    errorMessage.visibility =
-                        if (state.error != null) {
-                            View.VISIBLE
-                        } else {
-                            View.GONE
-                        }
-                }
-            }
-        }
-    }
-
-    // =========================================
-    // CREATION DES CARTES
-    // =========================================
-
-    private fun createDetail(
-        title: String,
-        description: String
-    ): TextView {
-
-        return TextView(requireContext()).apply {
-
-            text = "$title\n\n$description"
-
-            textSize = 16f
-
-            setTextColor(
-                Color.rgb(40, 50, 70)
-            )
-
-            setPadding(24, 28, 24, 28)
-
-            background = GradientDrawable().apply {
-
-                setColor(Color.WHITE)
-
-                cornerRadius = 22f
-
-                setStroke(
-                    1,
-                    Color.rgb(225, 232, 240)
-                )
+                setStroke(1, Color.rgb(225, 232, 240))
             }
 
             layoutParams = LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
             ).apply {
-
                 setMargins(0, 8, 0, 8)
             }
         }
     }
 
-    // =========================================
-    // FORMATAGE DU POIDS
-    // =========================================
+    /**
+     * Construit le contenu d'une carte.
+     */
+    private fun buildCardText(
+        title: String,
+        value: String
+    ): String {
+        return "$title\n\n$value"
+    }
 
+    /**
+     * Formate le poids en kilogrammes.
+     */
     private fun formatWeight(value: Float?): String {
 
         if (value == null) {
@@ -714,11 +264,22 @@ class WeightDetailScreen : Fragment() {
         }
 
         return String.format(
-            java.util.Locale.FRANCE,
+            Locale.FRANCE,
             "%.1f kg",
             value
         )
     }
-}
 
+    /**
+     * Formate le pourcentage de progression.
+     */
+    private fun formatPercentage(value: Float): String {
+
+        return String.format(
+            Locale.FRANCE,
+            "%.1f %%",
+            value
+        )
+    }
+}
     

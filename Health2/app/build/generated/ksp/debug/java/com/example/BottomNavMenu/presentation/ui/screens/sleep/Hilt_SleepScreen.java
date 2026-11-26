@@ -1,4 +1,4 @@
-package com.example.health2.presentation.ui.screens.sleep;
+package com.example.BottomNavMenu.presentation.ui.screens.sleep;
 
 import android.app.Activity;
 import android.content.Context;

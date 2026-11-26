@@ -8,8 +8,8 @@ import javax.annotation.processing.Generated;
  */
 @AggregatedDeps(
     components = "dagger.hilt.android.components.FragmentComponent",
-    entryPoints = "com.example.health2.presentation.ui.screens.weight.WeightDetailScreen_GeneratedInjector"
+    entryPoints = "com.example.BottomNavMenu.presentation.ui.screens.sleep.SleepScreen_GeneratedInjector"
 )
 @Generated("dagger.hilt.processor.internal.aggregateddeps.AggregatedDepsGenerator")
-public class _com_example_health2_presentation_ui_screens_weight_WeightDetailScreen_GeneratedInjector {
+public class _com_example_BottomNavMenu_presentation_ui_screens_sleep_SleepScreen_GeneratedInjector {
 }
